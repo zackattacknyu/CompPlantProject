@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     37775,        855]
-NotebookOptionsPosition[     37171,        828]
-NotebookOutlinePosition[     37512,        843]
-CellTagsIndexPosition[     37469,        840]
+NotebookDataLength[     41524,        961]
+NotebookOptionsPosition[     40570,        923]
+NotebookOutlinePosition[     40913,        938]
+CellTagsIndexPosition[     40870,        935]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,6 +25,21 @@ Cell[BoxData[
  CellChangeTimes->{{3.6809776313345537`*^9, 3.680977633496986*^9}}],
 
 Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"interpret", "::", "shdw"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Symbol \[NoBreak]\\!\\(\\\"interpret\\\"\\)\[NoBreak] \
+appears in multiple contexts \[NoBreak]\\!\\({\\\"xlr8r`\\\", \
+\\\"Global`\\\"}\\)\[NoBreak]; definitions in context \
+\[NoBreak]\\!\\(\\\"xlr8r`\\\"\\)\[NoBreak] may shadow or be shadowed by \
+other definitions. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\
+\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/shdw\\\", ButtonNote -> \
+\\\"xlr8r`interpret::shdw\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.680992611725439*^9}],
+
+Cell[BoxData[
  InterpretationBox[
   RowBox[{
    StyleBox["\<\"xCellerator \"\>",
@@ -32,7 +47,7 @@ Cell[BoxData[
     FontFamily->"Ubuntu,Arial",
     FontSize->12,
     FontWeight->"Bold"], "\[InvisibleSpace]", 
-   StyleBox["\<\"0.95 (28-Feb-2014) loaded Tue 23 Aug 2016 14:47:14\\nusing \
+   StyleBox["\<\"0.95 (28-Feb-2014) loaded Tue 23 Aug 2016 18:56:51\\nusing \
 Mathematica 8.0 for Microsoft Windows (64-bit) (October 6, 2011) (Version 8., \
 Release 4)\"\>",
     StripOnInput->False,
@@ -61,7 +76,7 @@ Release 4)\"\>",
   SequenceForm[
    Style["xCellerator ", FontWeight -> "Bold", FontFamily -> "Ubuntu,Arial", 
     FontSize -> 12], 
-   Style["0.95 (28-Feb-2014) loaded Tue 23 Aug 2016 14:47:14\nusing \
+   Style["0.95 (28-Feb-2014) loaded Tue 23 Aug 2016 18:56:51\nusing \
 Mathematica 8.0 for Microsoft Windows (64-bit) (October 6, 2011) (Version 8., \
 Release 4)", FontFamily -> "Ubuntu,Arial", FontSize -> 12], 
    Style[
@@ -69,7 +84,7 @@ Release 4)", FontFamily -> "Ubuntu,Arial", FontSize -> 12],
     "GPL License Terms Apply", "http://www.gnu.org/licenses/gpl.html"], 
     FontWeight -> Bold, FontFamily -> "Ubuntu,Arial", FontSize -> 12]],
   Editable->False]], "Print",
- CellChangeTimes->{3.680977634583709*^9}]
+ CellChangeTimes->{3.680977634583709*^9, 3.6809926121477184`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -103,7 +118,7 @@ before any xSSA (stochastic) simulations can be run.\"\>",
 functions may not work as expected. It should be loaded manually before any \
 xSSA (stochastic) simulations can be run.", Bold]],
   Editable->False]], "Print",
- CellChangeTimes->{3.6809776428872256`*^9}],
+ CellChangeTimes->{3.6809776428872256`*^9, 3.6809926174182215`*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -114,7 +129,7 @@ Cell[BoxData[
     FontSize->12,
     FontWeight->"Bold"], "\[InvisibleSpace]", 
    StyleBox["\<\" (3.0.15 (4-April-2013)) loaded Tue 23 Aug 2016 \
-14:47:23\\nusing \"\>",
+18:56:58\\nusing \"\>",
     StripOnInput->False,
     FontFamily->"Ubuntu,Arial",
     FontSize->12], "\[InvisibleSpace]", 
@@ -145,7 +160,7 @@ Cell[BoxData[
   SequenceForm[
    Style["Cellzilla2D", FontFamily -> "Ubuntu,Arial", FontSize -> 12, 
     FontWeight -> "Bold"], 
-   Style[" (3.0.15 (4-April-2013)) loaded Tue 23 Aug 2016 14:47:23\nusing ", 
+   Style[" (3.0.15 (4-April-2013)) loaded Tue 23 Aug 2016 18:56:58\nusing ", 
     FontSize -> 12, FontFamily -> "Ubuntu,Arial"], 
    Style["xCellerator ", FontSize -> 12, FontFamily -> "Ubuntu,Arial", 
     FontWeight -> "Bold"], 
@@ -156,7 +171,7 @@ Cell[BoxData[
    Style["\nGPL License Terms Apply", FontColor -> RGBColor[1, 0, 0], 
     FontSize -> 12, FontFamily -> "Ubuntu,Arial", FontWeight -> Bold]],
   Editable->False]], "Print",
- CellChangeTimes->{3.680977643172415*^9}]
+ CellChangeTimes->{3.6809776428872256`*^9, 3.6809926188051424`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -824,10 +839,90 @@ Cell[BoxData[
     LineBox[{{6.822987565142875, -7.310734620125784}, {
      8.71787836895805, -4.898836264262494}}]}}]], "Output",
  CellChangeTimes->{3.680977757334279*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"net", " ", "=", " ", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"A", "\[ShortRightArrow]", "B"}], ",", "b"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"2", " ", "A"}], "+", "B"}], "\[ShortRightArrow]", 
+       RowBox[{"3", " ", "A"}]}], ",", "c"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"cell", " ", "\[RightArrow]", " ", 
+        RowBox[{"cell", " ", "+", " ", "cell"}]}], ",", "a"}], "}"}], ";"}]}],
+    "\[IndentingNewLine]", "}"}]}]], "Input",
+ CellChangeTimes->{{3.6809914760893126`*^9, 3.680991484793096*^9}, {
+   3.6809915488566675`*^9, 3.6809915539530544`*^9}, {3.6809916892449603`*^9, 
+   3.6809916925861855`*^9}, {3.680991896000984*^9, 3.680991917723425*^9}, {
+   3.680992600003654*^9, 3.680992603951272*^9}, 3.680992674233982*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"A", "\[ShortRightArrow]", "B"}], ",", "b"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"2", " ", "A"}], "+", "B"}], "\[ShortRightArrow]", 
+      RowBox[{"3", " ", "A"}]}], ",", "c"}], "}"}], ",", "Null"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.6809916934927883`*^9, {3.68099189307504*^9, 3.680991918631028*^9}, {
+   3.6809926225526333`*^9, 3.680992633242738*^9}, 3.6809926746532555`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"interpret", "[", "net", "]"}], "[", 
+   RowBox[{"[", "1", "]"}], "]"}], "//", "TableForm"}]], "Input",
+ CellChangeTimes->{{3.680991943543578*^9, 3.68099195717964*^9}}],
+
+Cell[BoxData["\<\"Not a list of lists.\"\>"], "Print",
+ CellChangeTimes->{3.680992628618664*^9, 3.6809926880751753`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partw"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part \[NoBreak]\\!\\(1\\)\[NoBreak] of \
+\[NoBreak]\\!\\({}\\)\[NoBreak] does not exist. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partw\\\", ButtonNote -> \
+\\\"Part::partw\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.68099262879278*^9, 3.6809926880781765`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{"{", "}"}], "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.6809919575869102`*^9, 3.680992628860831*^9, 
+  3.6809926880811796`*^9}]
 }, Open  ]]
 },
-WindowSize->{603, 504},
-WindowMargins->{{Automatic, 0}, {Automatic, 4}},
+WindowSize->{642, 650},
+WindowMargins->{{Automatic, 30}, {30, Automatic}},
 FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
 StyleDefinitions->"Default.nb"
 ]
@@ -844,22 +939,32 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[579, 22, 119, 2, 31, "Input"],
-Cell[701, 26, 1749, 45, 62, "Print"]
+Cell[701, 26, 659, 13, 56, "Message"],
+Cell[1363, 41, 1773, 45, 62, "Print"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2487, 76, 125, 2, 31, "Input"],
+Cell[3173, 91, 125, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[2637, 82, 943, 23, 81, "Print"],
-Cell[3583, 107, 1950, 51, 62, "Print"]
+Cell[3323, 97, 967, 23, 62, "Print"],
+Cell[4293, 122, 1976, 51, 62, "Print"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5582, 164, 296, 6, 52, "Input"],
-Cell[5881, 172, 31274, 653, 375, "Output"]
+Cell[6318, 179, 296, 6, 52, "Input"],
+Cell[6617, 187, 31274, 653, 375, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37928, 845, 964, 24, 112, "Input"],
+Cell[38895, 871, 523, 15, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39455, 891, 214, 5, 31, "Input"],
+Cell[39672, 898, 120, 1, 23, "Print"],
+Cell[39795, 901, 488, 10, 21, "Message"],
+Cell[40286, 913, 268, 7, 44, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
