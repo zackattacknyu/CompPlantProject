@@ -55,11 +55,27 @@
 
 \begin{document}
 
-Here is an example of applying the heat equation over a simple mixed dimensional mesh. Next step will be showing that the mesh is a topologically stratified space. \\
+\subsection{Mixed Dimensional Mesh}
+
+Here is an example of applying the heat equation over a simple mixed dimensional mesh. Here is the mesh:
+\begin{figure}[h]
+\centering
+\includegraphics[width=3 in]{mixedMeshPic.png}
+\caption{A line and square joined together}
+\end{figure}
 \\
-Here is the mesh:\\
-**INSERT PICTURE OF THE LINE AND SQUARE**\\
+The topological space has 3 strata: \\
+1) The line on the left of the square\\
+2) The line on the right of the square\\
+3) The square\\
 \\
+The square can be filtered into its boundary and then the corner points.\\
+\\
+For the equations below, I will assume it's a line and square. \\
+One part of the boundary of the square forms part of the line. 
+
+\subsection{Heat Equation Over Rod}
+
 The heat equation for the rod $u(x,t)$ is as follows:
 \[
 \alpha_1 \frac{\partial^2 u}{\partial x^2} = \frac{\partial u}{\partial t}
@@ -71,14 +87,26 @@ u(0,t)=0
 \[
 u(3,t)=0
 \]
+The initial condition is as follows:
 \[
 u(x,0)=-5x(x-3)
 \]
-The square will have a separate heat equation $v(x,y,t)$. Here is the square's diffusion equation:
+
+\subsection{Heat Equation Over Square}
+
+The square will have a separate heat equation $v(x,y,t)$. \\
+Here is the square's diffusion equation:
 \[
-\alpha_2 (\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2}) = \frac{\partial u}{\partial t}
+\alpha_2 (\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2}) = \frac{\partial v}{\partial t}
 \]
-The boundary condition on the square will be the values at the rod. Here are all of its boundary conditions
+The boundary condition on the square will be the values at the rod. Formally this means
+\[
+v(x,0,t)=u(x,t)
+\]
+I assumed the square was uniformly heated initially in the y-direction. More formally, 
+\[
+v(x,y,0)=u(x,0)
+\]
 
 
 \end{document}
