@@ -58,6 +58,7 @@
 \subsection{Mixed Dimensional Mesh}
 
 Here I show the cooling and heating effects of a rod on a plate. Here is the initial mesh:
+**REPLACE MESH**
 \begin{figure}[h]
 \centering
 \includegraphics[width=3 in]{mixedMeshPic.png}
@@ -76,18 +77,33 @@ Here is the square's diffusion equation:
 \[
 \alpha_1 (\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2}) = \frac{\partial v}{\partial t}
 \]
+This is the initial condition:
+\[
+v(x,y,0) = -20x(x-1.5)(x-3)y(y-1)
+\]
+The boundary conditions are as follows:
+\[
+v(0,y,t)=0
+\]
+\[
+v(3,y,t)=0
+\]
+\[
+v(x,0,t)=0
+\]
+\[
+v(x,1,t)=0
+\]
 
 \subsection{Square without the rod}
 
-
-For the equations below, I will assume it's a line and square. \\
-One part of the boundary of the square forms part of the line. 
-
+For this case, I solved the above differential equation system **WRITE MORE IF POSSIBLE**
+\newpage
 \subsection{Heat Equation Over Rod}
 
-The heat equation for the rod $u(x,t)$ is as follows:
+The heat equation for the rods $u(y,t)$ is as follows:
 \[
-\alpha_1 \frac{\partial^2 u}{\partial x^2} = \frac{\partial u}{\partial t}
+\alpha_1 \frac{\partial^2 u}{\partial y^2} = \frac{\partial u}{\partial t}
 \]
 The boundary conditions will be as follows:
 \[
@@ -96,26 +112,23 @@ u(0,t)=0
 \[
 u(3,t)=0
 \]
-The initial condition is as follows:
+The initial condition for the left rod is as follows:
 \[
-u(x,0)=-5x(x-3)
+u_1(y,0)=y(y-1)
+\]
+The initial condition for the right rod is as follows:
+\[
+u_2(y,0)=-y(y-1)
 \]
 
-\subsection{Heat Equation Over Square}
+\subsection{Heat Equation Over Square with rods}
 
-The square will have a separate heat equation $v(x,y,t)$. \\
-Here is the square's diffusion equation:
-\[
-\alpha_2 (\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2}) = \frac{\partial v}{\partial t}
-\]
-The boundary condition on the square will be the values at the rod. Formally this means
-\[
-v(x,0,t)=u(x,t)
-\]
-I assumed the square was uniformly heated initially in the y-direction. More formally, 
-\[
-v(x,y,0)=u(x,0)
-\]
+For this I will split the domain into three parts. At least one of each of their boundaries will be a rod and the obtained values of $u_1$ and $u_2$ will be used as boundary conditions. 
+
+\subsection{Results}
+
+Here are the cooling/heating effects at 4 points on the square. It shows the time vs temp before and after the heating rods are applied. \\
+**INSERT PLOT**
 
 
 \end{document}
