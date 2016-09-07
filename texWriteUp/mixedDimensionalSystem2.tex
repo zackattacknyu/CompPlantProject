@@ -55,20 +55,12 @@
 
 \begin{document}
 
-\subsection{Mixed Dimensional Mesh}
-
-Here I show the cooling and heating effects of a rod on a plate. Here is the initial mesh:
-**REPLACE MESH**
+Here I show the cooling and heating effects of a rods on a plate. Here is the system:
 \begin{figure}[h]
 \centering
-\includegraphics[width=3 in]{mixedMeshPic.png}
+\includegraphics[width=6 in]{PlateAndTwoRods.png}
 \caption{A line and square joined together}
 \end{figure}
-\\
-The topological space has 3 strata: \\
-1) The left rod\\
-2) The right rod\\
-3) The square
 
 \subsection{Studying the square}
 
@@ -94,16 +86,14 @@ v(x,0,t)=0
 \[
 v(x,1,t)=0
 \]
+The boundary conditions were chosen so the system will equilibrate to zero over time. The initial condition was chosen so the left half of the square has a high temperature and the right half of the square has a low temperature. Therefore, the left rod will have a cooling effect and the right rod will have a heating effect as the system equilibrates to zero. 
 
-\subsection{Square without the rod}
-
-For this case, I solved the above differential equation system **WRITE MORE IF POSSIBLE**
 \newpage
 \subsection{Heat Equation Over Rod}
 
 The heat equation for the rods $u(y,t)$ is as follows:
 \[
-\alpha_1 \frac{\partial^2 u}{\partial y^2} = \frac{\partial u}{\partial t}
+\alpha_2 \frac{\partial^2 u}{\partial y^2} = \frac{\partial u}{\partial t}
 \]
 The boundary conditions will be as follows:
 \[
@@ -114,21 +104,16 @@ u(3,t)=0
 \]
 The initial condition for the left rod is as follows:
 \[
-u_1(y,0)=y(y-1)
+u_1(y,0)=v(1,y,0)=y(y-1)
 \]
 The initial condition for the right rod is as follows:
 \[
-u_2(y,0)=-y(y-1)
+u_2(y,0)=v(2,y,0)=-y(y-1)
 \]
 
 \subsection{Heat Equation Over Square with rods}
 
-For this I will split the domain into three parts. At least one of each of their boundaries will be a rod and the obtained values of $u_1$ and $u_2$ will be used as boundary conditions. 
-
-\subsection{Results}
-
-Here are the cooling/heating effects at 4 points on the square. It shows the time vs temp before and after the heating rods are applied. \\
-**INSERT PLOT**
+For this I split the domain into three parts. The initial and boundary conditions remain the same unless one of the boundaries contains a rod in which case the boundary condition is the value for $u(y,t)$. The rest of the details are in the mathematica notebook. 
 
 
 \end{document}
