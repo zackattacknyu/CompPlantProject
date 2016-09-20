@@ -58,8 +58,8 @@
 Here is the system:
 \begin{figure}[h]
 \centering
-\includegraphics[height=2in]{PlateAndRod.png}
-\caption{A line and square joined together}
+\includegraphics[height=1.5in]{PlateAndRod.png}
+\caption{A plate with a rod in the middle}
 \end{figure}
 
 I am using the sequential splitting technique described in section 2.1 of \href{http://www.sciencedirect.com/science/article/pii/S0307904X07001606}{this paper}
@@ -68,48 +68,31 @@ Let R represent the plate without the rod\\
 Let V represent the plate with the rod temperature as a boundary condition\\
 Let F be the final temperature of the plate with the plate and rod interacting\\
 I am assuming F = R + V\\
-
-The square will have a heat equation $v(x,y,t)$. \\
-Here is the square's diffusion equation:
+\\
+The diffusion equation used will be the following:
 \[
-\alpha_1 (\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2}) = \frac{\partial v}{\partial t}
+\frac{\partial F}{\partial t} = \alpha_{plate} (\frac{\partial^2 F}{\partial x^2} + \frac{\partial^2 F}{\partial y^2})
 \]
-This is the initial condition:
+I will let the initial condition be 
 \[
-v(x,y,0) = -20x(x-2)y(y-1)
-\]
-The boundary conditions are as follows:
-\[
-v(0,y,t)=0
-\]
-\[
-v(2,y,t)=0
-\]
-\[
-v(x,0,t)=0
-\]
-\[
-v(x,1,t)=0
-\]
-
-\newpage
-\subsection{Heat Equation Over Rod}
-
-The heat equation for the rod $u(y,t)$ is as follows:
-\[
-\alpha_2 \frac{\partial^2 u}{\partial y^2} = \frac{\partial u}{\partial t}
+F(x,y,0)=20x(x-2)y(y-1)
 \]
 The boundary conditions will be as follows:
 \[
-u(0,t)=0
+F(0,y,t)=F(2,y,t)=F(x,0,t)=F(x,1,t)=0
 \]
+
+For the rod $u(y,t)$, I will assume its diffusion equation is as follows
 \[
-u(1,t)=0
+\frac{\partial u}{\partial t} = \alpha_{rod} \frac{\partial^2 u}{\partial y^2}
 \]
-The initial condition for the rod is as follows:
-\[
-u(y,0)=v(1,y,0)=-20y(y-1)
-\]
+The initial condition will be $u(y,0)=F(1,y,0)$\\
+The boundary conditions will be $u(0,t)=u(1,t)=0$\\
+\\
+When computing R, I will use the same differential as F and the same boundary conditions. \\
+When computing V, I will impose the condition that $V(1,y,t)=u(y,t)$\\
+\\
+The pseudo-code and implementation are in the attached mathematica notebook.
 
 
 
