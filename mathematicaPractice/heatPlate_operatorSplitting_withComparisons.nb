@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     64659,       1643]
-NotebookOptionsPosition[     63173,       1594]
-NotebookOutlinePosition[     63517,       1609]
-CellTagsIndexPosition[     63474,       1606]
+NotebookDataLength[     61047,       1537]
+NotebookOptionsPosition[     59810,       1495]
+NotebookOutlinePosition[     60152,       1510]
+CellTagsIndexPosition[     60109,       1507]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -122,10 +122,11 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"maxT", " ", "=", " ", "10"}], ";", " ", 
-  RowBox[{"NN", " ", "=", " ", "400"}], ";", " ", 
-  RowBox[{"tau", "=", 
-   RowBox[{"maxT", "/", "NN"}]}], ";", " ", 
+  RowBox[{
+   RowBox[{"maxT", " ", "=", " ", "10"}], ";", " ", 
+   RowBox[{"NN", " ", "=", " ", "100"}], ";", " ", 
+   RowBox[{"tau", "=", 
+    RowBox[{"maxT", "/", "NN"}]}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{
    "max", " ", "time", " ", "and", " ", "num", " ", "time", " ", "steps", " ",
@@ -133,7 +134,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.6831419816025443`*^9, 3.683142012574606*^9}, {
    3.6831805891391582`*^9, 3.6831805929081726`*^9}, 3.6833975986495414`*^9, {
    3.6835204092616377`*^9, 3.683520419709235*^9}, {3.683529883130859*^9, 
-   3.683529890794297*^9}}],
+   3.683529890794297*^9}, 3.6836105439271064`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -459,12 +460,9 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"curF", "[", 
          RowBox[{
-          RowBox[{"i", "/", "100"}], ",", 
-          RowBox[{"j", "/", "100"}]}], "]"}], ",", 
+          RowBox[{"i", "/", "100"}], ",", "0.5"}], "]"}], ",", 
         RowBox[{"{", 
-         RowBox[{"i", ",", "0", ",", "200"}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"j", ",", "0", ",", "100"}], "}"}]}], "]"}]}], ";", 
+         RowBox[{"i", ",", "0", ",", "200"}], "}"}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"(*", 
       RowBox[{
@@ -483,14 +481,15 @@ Cell[BoxData[
    3.68335183939285*^9, {3.6833524330395536`*^9, 3.6833524663846316`*^9}, {
    3.683397624858824*^9, 3.683397625020824*^9}, {3.6834009261927533`*^9, 
    3.6834009868147373`*^9}, {3.6834010290910645`*^9, 
-   3.6834010742924376`*^9}, {3.683401210190383*^9, 3.6834012730438476`*^9}}],
+   3.6834010742924376`*^9}, {3.683401210190383*^9, 3.6834012730438476`*^9}, {
+   3.6836086325217476`*^9, 3.6836086412252455`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
    "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"10000\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,18,9,28733695494502877754,"Local"},
+\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,7,1,28734276137283679227,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -498,14 +497,15 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
   3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
   3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299140766287`*^9}],
+  3.6835221644723215`*^9, 3.6835299140766287`*^9, 3.6836087060636835`*^9, 
+  3.683610561435108*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
    "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"100\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"x\\\"}]\\).\"",2,18,10,28733695494502877754,"Local"},
+\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,7,2,28734276137283679227,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -513,14 +513,15 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
   3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
   3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.683529918852902*^9}],
+  3.6835221644723215`*^9, 3.6835299140766287`*^9, 3.6836087060636835`*^9, 
+  3.683610564032256*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
    "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"100\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"x\\\"}]\\).\"",2,18,11,28733695494502877754,"Local"},
+\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,7,3,28734276137283679227,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -528,14 +529,15 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
   3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
   3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299195109396`*^9}],
+  3.6835221644723215`*^9, 3.6835299140766287`*^9, 3.6836087060636835`*^9, 
+  3.6836105662513833`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
 \\\"::\\\", \\\"mxsst\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,18,12,28733695494502877754,"Local"},
+during this calculation.\"",2,7,4,28734276137283679227,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -543,154 +545,8 @@ during this calculation.\"",2,18,12,28733695494502877754,"Local"},
   3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
   3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
   3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299195269403`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","eerr",
-   "\"Warning: scaled local spatial error estimate of \
-\\!\\(\\*RowBox[{\\\"11.348892905706434`\\\"}]\\) at \\!\\(\\*RowBox[{\\\"t\\\
-\"}]\\) = \\!\\(\\*RowBox[{\\\"0.025`\\\"}]\\) in the direction of \
-independent variable \\!\\(\\*RowBox[{\\\"x\\\"}]\\) is much greater than the \
-prescribed error tolerance. Grid spacing with \
-\\!\\(\\*RowBox[{\\\"101\\\"}]\\) points may be too large to achieve the \
-desired accuracy or precision. A singularity may have formed or a smaller \
-grid spacing can be specified using the MaxStepSize or MinPoints method \
-options.\"",2,18,13,28733695494502877754,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
-  3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
-  3.6834069188106203`*^9, 3.683407456311465*^9, 3.683408028283342*^9, 
-  3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
-  3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
-  3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.683529919793956*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","eerr",
-   "\"Warning: scaled local spatial error estimate of \
-\\!\\(\\*RowBox[{\\\"14.282583173460033`\\\"}]\\) at \\!\\(\\*RowBox[{\\\"t\\\
-\"}]\\) = \\!\\(\\*RowBox[{\\\"0.025`\\\"}]\\) in the direction of \
-independent variable \\!\\(\\*RowBox[{\\\"x\\\"}]\\) is much greater than the \
-prescribed error tolerance. Grid spacing with \
-\\!\\(\\*RowBox[{\\\"101\\\"}]\\) points may be too large to achieve the \
-desired accuracy or precision. A singularity may have formed or a smaller \
-grid spacing can be specified using the MaxStepSize or MinPoints method \
-options.\"",2,18,14,28733695494502877754,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
-  3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
-  3.6834069188106203`*^9, 3.683407456311465*^9, 3.683408028283342*^9, 
-  3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
-  3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
-  3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299474815392`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","eerr",
-   "\"Warning: scaled local spatial error estimate of \
-\\!\\(\\*RowBox[{\\\"14.100391834476083`\\\"}]\\) at \\!\\(\\*RowBox[{\\\"t\\\
-\"}]\\) = \\!\\(\\*RowBox[{\\\"0.025`\\\"}]\\) in the direction of \
-independent variable \\!\\(\\*RowBox[{\\\"x\\\"}]\\) is much greater than the \
-prescribed error tolerance. Grid spacing with \
-\\!\\(\\*RowBox[{\\\"101\\\"}]\\) points may be too large to achieve the \
-desired accuracy or precision. A singularity may have formed or a smaller \
-grid spacing can be specified using the MaxStepSize or MinPoints method \
-options.\"",2,18,15,28733695494502877754,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
-  3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
-  3.6834069188106203`*^9, 3.683407456311465*^9, 3.683408028283342*^9, 
-  3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
-  3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
-  3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299680507154`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
-\\\"::\\\", \\\"eerr\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
-this calculation.\"",2,18,16,28733695494502877754,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
-  3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
-  3.6834069188106203`*^9, 3.683407456311465*^9, 3.683408028283342*^9, 
-  3.683408509085368*^9, 3.683425470939741*^9, 3.6834373958417444`*^9, 
-  3.6834784790687733`*^9, 3.6834865566568637`*^9, 3.6834913971514273`*^9, 
-  3.683492691498088*^9, 3.6835181879588594`*^9, 3.683520589182928*^9, 
-  3.6835221644723215`*^9, 3.6835299681177197`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
-   RowBox[{
-   "Make", " ", "3", "D", " ", "plots", " ", "for", " ", "each", " ", "of", 
-    " ", "the", " ", "time", " ", "steps"}], "*)"}], 
-  RowBox[{"Manipulate", "[", 
-   RowBox[{
-    RowBox[{"ListPlot3D", "[", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"allFvals", "[", 
-        RowBox[{"[", "jj", "]"}], "]"}], ",", 
-       RowBox[{"Table", "[", 
-        RowBox[{"5", ",", 
-         RowBox[{"{", 
-          RowBox[{"i", ",", "200"}], "}"}], ",", 
-         RowBox[{"{", 
-          RowBox[{"j", ",", "100"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"jj", ",", "1", ",", "NN", ",", "1"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.683352827548339*^9, 3.6833529035746827`*^9}, {
-  3.683398603538097*^9, 3.6833986036921*^9}, {3.6834012950394993`*^9, 
-  3.6834013032895594`*^9}}],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`jj$$ = 1, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`jj$$], 1, 400, 1}}, Typeset`size$$ = {
-    360., {143., 149.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`jj$293823$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`jj$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`jj$$, $CellContext`jj$293823$$, 0]}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> ListPlot3D[{
-         Part[$CellContext`allFvals, $CellContext`jj$$], 
-         Table[5, {$CellContext`i, 200}, {$CellContext`j, 100}]}], 
-      "Specifications" :> {{$CellContext`jj$$, 1, 400, 1}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {192., 199.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6833528843510475`*^9, 3.6833531263420153`*^9, 
-  3.6833532136964054`*^9, 3.6833986044921093`*^9, 3.6834018814749575`*^9, 
-  3.6834073770080323`*^9, 3.683407932130869*^9, 3.683408364750516*^9, 
-  3.68340891865383*^9, 3.6834260663423305`*^9, 3.6834379813492126`*^9, 
-  3.6834800798107553`*^9, 3.68349197460081*^9, 3.683493265429497*^9, 
-  3.683518758720612*^9, 3.683527589525204*^9, 3.683532434475695*^9}]
+  3.6835221644723215`*^9, 3.6835299140766287`*^9, 3.6836087060636835`*^9, 
+  3.6836105662693844`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -774,19 +630,16 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"squareOriginal", "[", 
      RowBox[{
-      RowBox[{"i", "/", "100"}], ",", 
-      RowBox[{"j", "/", "100"}], ",", 
+      RowBox[{"i", "/", "100"}], ",", "0.5", ",", 
       RowBox[{"tau", "*", "tt", "*", "2"}]}], "]"}], ",", 
     RowBox[{"{", 
      RowBox[{"i", ",", "0", ",", "200"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"j", ",", "0", ",", "100"}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{"tt", ",", "0", ",", "NN"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6834817619447527`*^9, 3.6834817709814343`*^9}, {
    3.6834818379989367`*^9, 3.683481841427279*^9}, {3.683481974163084*^9, 
    3.683481984707177*^9}, 3.683518133470443*^9, {3.6835219186335096`*^9, 
-   3.6835219188205113`*^9}}],
+   3.6835219188205113`*^9}, {3.683608143785424*^9, 3.683608149799768*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -798,18 +651,38 @@ Cell[BoxData[
          RowBox[{"{", 
           RowBox[{
            RowBox[{"{", 
-            TemplateBox[{"1"},
-             "OutputSizeLimit`Skeleton",
-             DisplayFunction->(FrameBox[
-               
-               RowBox[{
-                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-               Background -> GrayLevel[0.75], 
-               BaseStyle -> {
-                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
-                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-               FrameStyle -> None, RoundingRadius -> 7]& )], "}"}], ",", 
+            RowBox[{
+            "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", 
+             RowBox[{"-", "1.1102230246251565`*^-16"}], ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", 
+             RowBox[{"-", "1.1102230246251565`*^-16"}], ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "5.551115123125783`*^-17", ",", 
+             RowBox[{"-", "5.551115123125783`*^-17"}], ",", "0.`", ",", "0.`",
+              ",", 
+             RowBox[{"-", "5.551115123125783`*^-17"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "6.938893903907228`*^-18"}], ",", "0.`", ",", 
+             RowBox[{"-", "6.938893903907228`*^-18"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", 
+             RowBox[{"-", "3.469446951953614`*^-18"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "1.734723475976807`*^-18"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", 
+             RowBox[{"-", "1.734723475976807`*^-18"}], ",", "0.`"}], "}"}], 
+           ",", 
            TemplateBox[{"199"},
             "OutputSizeLimit`Skeleton",
             DisplayFunction->(FrameBox[
@@ -821,18 +694,30 @@ Cell[BoxData[
               ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
               FrameStyle -> None, RoundingRadius -> 7]& )], ",", 
            RowBox[{"{", 
-            TemplateBox[{"1"},
-             "OutputSizeLimit`Skeleton",
-             DisplayFunction->(FrameBox[
-               
-               RowBox[{
-                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-               Background -> GrayLevel[0.75], 
-               BaseStyle -> {
-                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
-                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-               FrameStyle -> None, RoundingRadius -> 7]& )], "}"}]}], "}"}],
+            RowBox[{
+            "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", 
+             TemplateBox[{"53"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], ",", "0.`", ",", "0.`", ",", "0.`", 
+             ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`"}], "}"}]}], "}"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
@@ -886,7 +771,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 22, 28733695494502877754, 5/2],
+            OutputSizeLimit`Defer, 10, 28734276137283679227, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -916,7 +801,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 22, 28733695494502877754, 5 2],
+            OutputSizeLimit`Defer, 10, 28734276137283679227, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -946,7 +831,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 22, 28733695494502877754, Infinity],
+            OutputSizeLimit`Defer, 10, 28734276137283679227, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1013,11 +898,11 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[22]]], "Output",
+  Out[10]]], "Output",
  CellChangeTimes->{{3.6834818311432137`*^9, 3.6834818585260053`*^9}, 
    3.683483025414459*^9, 3.683492175854169*^9, 3.683493476435248*^9, 
    3.6835181641822214`*^9, 3.6835189577166805`*^9, 3.683529905162119*^9, 
-   3.683533262586337*^9}]
+   3.683533262586337*^9, 3.6836103110471945`*^9, 3.6836108516312203`*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -1236,17 +1121,15 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"squareRodOriginal", "[", 
      RowBox[{
-      RowBox[{"i", "/", "100"}], ",", 
-      RowBox[{"j", "/", "100"}], ",", 
+      RowBox[{"i", "/", "100"}], ",", "0.5", ",", 
       RowBox[{"tau", "*", "tt", "*", "2"}]}], "]"}], ",", 
     RowBox[{"{", 
      RowBox[{"i", ",", "0", ",", "200"}], "}"}], ",", 
     RowBox[{"{", 
-     RowBox[{"j", ",", "0", ",", "100"}], "}"}], ",", 
-    RowBox[{"{", 
      RowBox[{"tt", ",", "0", ",", "NN"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.683492532585575*^9, 3.683492537267786*^9}, 
-   3.683518169969737*^9, 3.6835219301387386`*^9}],
+   3.683518169969737*^9, 3.6835219301387386`*^9, {3.6836085492379837`*^9, 
+   3.683608554485284*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1258,18 +1141,37 @@ Cell[BoxData[
          RowBox[{"{", 
           RowBox[{
            RowBox[{"{", 
-            TemplateBox[{"1"},
-             "OutputSizeLimit`Skeleton",
-             DisplayFunction->(FrameBox[
-               
-               RowBox[{
-                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-               Background -> GrayLevel[0.75], 
-               BaseStyle -> {
-                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
-                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-               FrameStyle -> None, RoundingRadius -> 7]& )], "}"}], ",", 
+            RowBox[{
+            "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "2.7755575615628914`*^-17"}], ",", 
+             RowBox[{"-", "2.7755575615628914`*^-17"}], ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "1.3877787807814457`*^-17"}], ",", 
+             RowBox[{"-", "1.3877787807814457`*^-17"}], ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "6.938893903907228`*^-18"}], ",", "0.`", ",", 
+             "6.938893903907228`*^-18", ",", "0.`", ",", "0.`", ",", "0.`", 
+             ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", 
+             RowBox[{"-", "3.469446951953614`*^-18"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "1.734723475976807`*^-18"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "2.168404344971009`*^-19"}], ",", "0.`", ",", 
+             RowBox[{"-", "2.168404344971009`*^-19"}], ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             RowBox[{"-", "5.421010862427522`*^-20"}], ",", "0.`", ",", 
+             "0.`"}], "}"}], ",", 
            TemplateBox[{"199"},
             "OutputSizeLimit`Skeleton",
             DisplayFunction->(FrameBox[
@@ -1281,18 +1183,28 @@ Cell[BoxData[
               ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
               FrameStyle -> None, RoundingRadius -> 7]& )], ",", 
            RowBox[{"{", 
-            TemplateBox[{"1"},
-             "OutputSizeLimit`Skeleton",
-             DisplayFunction->(FrameBox[
-               
-               RowBox[{
-                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-               Background -> GrayLevel[0.75], 
-               BaseStyle -> {
-                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
-                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
-               FrameStyle -> None, RoundingRadius -> 7]& )], "}"}]}], "}"}],
+            RowBox[{
+            "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`",
+              ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",",
+              "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             TemplateBox[{"59"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], ",", "0.`", ",", "0.`", ",", "0.`", 
+             ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", "0.`", ",", 
+             "0.`", ",", "0.`", ",", "0.`"}], "}"}]}], "}"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
@@ -1346,7 +1258,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 27, 28733695494502877754, 5/2],
+            OutputSizeLimit`Defer, 15, 28734276137283679227, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1376,7 +1288,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 27, 28733695494502877754, 5 2],
+            OutputSizeLimit`Defer, 15, 28734276137283679227, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1406,7 +1318,7 @@ Cell[BoxData[
            Appearance->None,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 27, 28733695494502877754, Infinity],
+            OutputSizeLimit`Defer, 15, 28734276137283679227, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -1473,43 +1385,32 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[27]]], "Output",
+  Out[15]]], "Output",
  CellChangeTimes->{3.6834926396101203`*^9, 3.683493682397292*^9, 
-  3.6835191617969236`*^9, 3.683534054945039*^9}]
+  3.6835191617969236`*^9, 3.683534054945039*^9, 3.6836103201070604`*^9, 
+  3.6836108551304207`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
+ RowBox[{"(*", 
+  RowBox[{
    RowBox[{
     RowBox[{
-     RowBox[{
-     "Make", " ", "plot", " ", "showing", " ", "the", " ", "comparison", " ", 
-      "with", " ", "previous", " ", 
-      RowBox[{"systems", ".", " ", "The"}], " ", "plot", " ", "is", " ", 
-      "make", " ", "at", " ", "the", " ", "cross"}], "-", 
-     RowBox[{"section", " ", "of", " ", "y"}]}], "=", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"0.5", ".", " ", "The"}], " ", "comparison", " ", "was", " ", 
-      "difficult", " ", "to", " ", "see", " ", "when", " ", "using", " ", "a",
-       " ", "3", "D", " ", "plot", " ", "hence", " ", "the", " ", "decision", 
-      " ", "to", " ", "do", " ", "a", " ", "cross"}], "-", "section"}]}], 
-   "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", 
+    "Made", " ", "plot", " ", "showing", " ", "the", " ", "comparison", " ", 
+     "with", " ", "previous", " ", 
+     RowBox[{"systems", ".", " ", "The"}], " ", "plot", " ", "is", " ", 
+     "make", " ", "at", " ", "the", " ", "cross"}], "-", 
+    RowBox[{"section", " ", "of", " ", "y"}]}], "=", 
    RowBox[{
-    RowBox[{"TODO", ":", " ", 
-     RowBox[{
-     "With", " ", "the", " ", "Square", " ", "with", " ", "and", " ", 
-      "without", " ", "rod"}]}], ",", " ", 
     RowBox[{
-    "I", " ", "need", " ", "to", " ", "double", " ", "the", " ", "interval", 
-     " ", "sizes", " ", "since", " ", "the", " ", "system", " ", "does", " ", 
-     "a", " ", "double", " ", "iteration", " ", "whereas", " ", "currently", 
-     " ", "the", " ", "comparison", " ", "ones", " ", "only", " ", "do", " ", 
-     "a", " ", "single", " ", "iteration"}]}], "*)"}]}]], "Input",
+     RowBox[{"0.5", ".", " ", "The"}], " ", "comparison", " ", "was", " ", 
+     "difficult", " ", "to", " ", "see", " ", "when", " ", "using", " ", "a", 
+     " ", "3", "D", " ", "plot", " ", "hence", " ", "the", " ", "decision", 
+     " ", "to", " ", "do", " ", "a", " ", "cross"}], "-", "section"}]}], 
+  "*)"}]], "Input",
  CellChangeTimes->{{3.6835204719182215`*^9, 3.6835205500766916`*^9}, {
-  3.6835218295080566`*^9, 3.6835218724517813`*^9}}],
+  3.6835218295080566`*^9, 3.6835218724517813`*^9}, {3.6836103812804337`*^9, 
+  3.6836103864660697`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1520,17 +1421,14 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-       RowBox[{
-        RowBox[{"allFvals", "[", 
-         RowBox[{"[", "jj", "]"}], "]"}], "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "50"}], "]"}], "]"}], ",", 
+       RowBox[{"allFvals", "[", 
+        RowBox[{"[", "jj", "]"}], "]"}], ",", 
        RowBox[{"squareOriginalTable", "[", 
         RowBox[{"[", 
-         RowBox[{"All", ",", "50", ",", "jj"}], "]"}], "]"}], ",", 
+         RowBox[{"All", ",", "jj"}], "]"}], "]"}], ",", 
        RowBox[{"squareRodOriginalTable", "[", 
         RowBox[{"[", 
-         RowBox[{"All", ",", "50", ",", "jj"}], "]"}], "]"}], ",", 
+         RowBox[{"All", ",", "jj"}], "]"}], "]"}], ",", 
        RowBox[{"Table", "[", 
         RowBox[{"5", ",", 
          RowBox[{"{", 
@@ -1544,40 +1442,39 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"jj", ",", "1", ",", "NN", ",", "1"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.683492624513257*^9, 3.683492629536544*^9}, {
-  3.68349467490602*^9, 3.683494714507696*^9}, {3.683520206188195*^9, 
-  3.683520209528002*^9}, {3.6835205593242207`*^9, 3.683520572989002*^9}}],
+   3.68349467490602*^9, 3.683494714507696*^9}, {3.683520206188195*^9, 
+   3.683520209528002*^9}, {3.6835205593242207`*^9, 3.683520572989002*^9}, {
+   3.6836085638628206`*^9, 3.6836085693511343`*^9}, 3.683608659605296*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`jj$$ = 34, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`jj$$ = 14, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`jj$$], 1, 400, 1}}, Typeset`size$$ = {
+      Hold[$CellContext`jj$$], 1, 100, 1}}, Typeset`size$$ = {
     536., {110., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`jj$294045$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`jj$18868$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`jj$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`jj$$, $CellContext`jj$294045$$, 0]}, 
+        Hold[$CellContext`jj$$, $CellContext`jj$18868$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> ListPlot[{
-         Part[
-          Part[$CellContext`allFvals, $CellContext`jj$$], All, 50], 
-         Part[$CellContext`squareOriginalTable, All, 50, $CellContext`jj$$], 
-         Part[$CellContext`squareRodOriginalTable, All, 
-          50, $CellContext`jj$$], 
+         Part[$CellContext`allFvals, $CellContext`jj$$], 
+         Part[$CellContext`squareOriginalTable, All, $CellContext`jj$$], 
+         Part[$CellContext`squareRodOriginalTable, All, $CellContext`jj$$], 
          Table[5, {$CellContext`i, 200}]}, 
         PlotLegends -> {
          "Operator Split System", "Square without rod", "Square with Rod", 
           "Const"}, Joined -> True], 
-      "Specifications" :> {{$CellContext`jj$$, 1, 400, 1}}, "Options" :> {}, 
+      "Specifications" :> {{$CellContext`jj$$, 1, 100, 1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{587., {160., 167.}},
+     ImageSizeCache->{587., {176., 183.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1589,11 +1486,15 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.6834936824284925`*^9, 3.6834947152252975`*^9, 
-  3.683519161822524*^9, 3.683520210202803*^9, 3.683534054978239*^9}]
-}, Open  ]]
+  3.683519161822524*^9, 3.683520210202803*^9, 3.683534054978239*^9, 
+  3.683610321263467*^9, 3.683610855321431*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6836069168138056`*^9, 3.683606936327241*^9}}]
 },
-WindowSize->{1018, 980},
-WindowMargins->{{Automatic, 188}, {Automatic, 48}},
+WindowSize->{1662, 950},
+WindowMargins->{{-9, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1610,41 +1511,34 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 3613, 87, 297, "Input"],
 Cell[4174, 109, 571, 11, 30, "Input"],
-Cell[4748, 122, 593, 13, 30, "Input"],
-Cell[5344, 137, 438, 12, 30, "Input"],
-Cell[5785, 151, 657, 19, 30, "Input"],
-Cell[6445, 172, 180, 4, 30, "Input"],
+Cell[4748, 122, 634, 14, 30, "Input"],
+Cell[5385, 138, 438, 12, 30, "Input"],
+Cell[5826, 152, 657, 19, 30, "Input"],
+Cell[6486, 173, 180, 4, 30, "Input"],
 Cell[CellGroupData[{
-Cell[6650, 180, 11769, 305, 468, "Input"],
-Cell[18422, 487, 799, 13, 21, "Message"],
-Cell[19224, 502, 796, 13, 21, "Message"],
-Cell[20023, 517, 798, 13, 21, "Message"],
-Cell[20824, 532, 779, 13, 21, "Message"],
-Cell[21606, 547, 1175, 19, 56, "Message"],
-Cell[22784, 568, 1177, 19, 56, "Message"],
-Cell[23964, 589, 1177, 19, 56, "Message"],
-Cell[25144, 610, 778, 13, 21, "Message"]
+Cell[6691, 181, 11711, 303, 373, "Input"],
+Cell[18405, 486, 847, 14, 21, "Message"],
+Cell[19255, 502, 845, 14, 21, "Message"],
+Cell[20103, 518, 847, 14, 21, "Message"],
+Cell[20953, 534, 828, 14, 21, "Message"]
 }, Open  ]],
+Cell[21796, 551, 92, 1, 30, "Input"],
+Cell[21891, 554, 2295, 68, 50, "Input"],
 Cell[CellGroupData[{
-Cell[25959, 628, 865, 23, 50, "Input"],
-Cell[26827, 653, 2065, 39, 408, "Output"]
+Cell[24211, 626, 708, 15, 30, "Input"],
+Cell[24922, 643, 11406, 261, 155, "Output"]
 }, Open  ]],
-Cell[28907, 695, 92, 1, 30, "Input"],
-Cell[29002, 698, 2295, 68, 69, "Input"],
+Cell[36343, 907, 7229, 206, 183, "Input"],
 Cell[CellGroupData[{
-Cell[31322, 770, 762, 18, 30, "Input"],
-Cell[32087, 790, 9188, 229, 91, "Output"]
+Cell[43597, 1117, 588, 14, 30, "Input"],
+Cell[44188, 1133, 11209, 257, 155, "Output"]
 }, Open  ]],
-Cell[41290, 1022, 7229, 206, 278, "Input"],
+Cell[55412, 1393, 891, 19, 30, "Input"],
 Cell[CellGroupData[{
-Cell[48544, 1232, 636, 16, 30, "Input"],
-Cell[49183, 1250, 9063, 227, 91, "Output"]
+Cell[56328, 1416, 1279, 30, 50, "Input"],
+Cell[57610, 1448, 2087, 41, 376, "Output"]
 }, Open  ]],
-Cell[58261, 1480, 1461, 31, 107, "Input"],
-Cell[CellGroupData[{
-Cell[59747, 1515, 1320, 32, 69, "Input"],
-Cell[61070, 1549, 2087, 42, 344, "Output"]
-}, Open  ]]
+Cell[59712, 1492, 94, 1, 30, "Input"]
 }
 ]
 *)
