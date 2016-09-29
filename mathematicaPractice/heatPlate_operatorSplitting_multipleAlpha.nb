@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30761,        759]
-NotebookOptionsPosition[     29771,        725]
-NotebookOutlinePosition[     30114,        740]
-CellTagsIndexPosition[     30071,        737]
+NotebookDataLength[     31056,        761]
+NotebookOptionsPosition[     30065,        727]
+NotebookOutlinePosition[     30408,        742]
+CellTagsIndexPosition[     30365,        739]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -109,7 +109,8 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"alphaPlate", " ", "=", " ", "0.02"}], ";", " ", 
+  RowBox[{
+   RowBox[{"alphaPlate", " ", "=", " ", "0.02"}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{"Alpha", " ", "Values"}], "*)"}]}]], "Input",
  CellChangeTimes->{{3.683141943407442*^9, 3.6831419495104637`*^9}, {
@@ -131,11 +132,10 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"maxT", " ", "=", " ", "1.5"}], ";", " ", 
-   RowBox[{"NN", " ", "=", " ", "20"}], ";", " ", 
-   RowBox[{"tau", "=", 
-    RowBox[{"maxT", "/", "NN"}]}], ";"}], " ", 
+  RowBox[{"maxT", " ", "=", " ", "0.3"}], ";", " ", 
+  RowBox[{"NN", " ", "=", " ", "20"}], ";", " ", 
+  RowBox[{"tau", "=", 
+   RowBox[{"maxT", "/", "NN"}]}], ";", " ", 
   RowBox[{"(*", 
    RowBox[{
    "max", " ", "time", " ", "and", " ", "num", " ", "time", " ", "steps", " ",
@@ -144,7 +144,8 @@ Cell[BoxData[
    3.6831805891391582`*^9, 3.6831805929081726`*^9}, 3.6833975986495414`*^9, 
    3.683653777941373*^9, {3.683695230552796*^9, 3.683695234622015*^9}, {
    3.6836960791899095`*^9, 3.68369607937911*^9}, {3.683696912500621*^9, 
-   3.6836969217280474`*^9}}],
+   3.6836969217280474`*^9}, {3.683786849056354*^9, 3.6837868494077578`*^9}, 
+   3.6837874236771574`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -563,9 +564,9 @@ Cell[BoxData[
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
-   "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"10000\\\"}]\\) \
+   "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"100\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,51,13,28734836391047261716,"Local"},
+\\!\\(\\*RowBox[{\\\"x\\\"}]\\).\"",2,24,9,28735164661355349460,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -574,14 +575,14 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683427751862856*^9, 3.6836546450991945`*^9, 3.6836567744695573`*^9, 
   3.683694812720703*^9, 3.683695238968629*^9, 3.6836956078861656`*^9, 
   3.683696084790121*^9, 3.683696356982915*^9, 3.6836966490404024`*^9, 
-  3.683696934208936*^9}],
+  3.683696934208936*^9, 3.68378685393321*^9, 3.6837874272443614`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
    "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"100\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,51,14,28734836391047261716,"Local"},
+\\!\\(\\*RowBox[{\\\"x\\\"}]\\).\"",2,24,10,28735164661355349460,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -590,14 +591,14 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683427751862856*^9, 3.6836546450991945`*^9, 3.6836567744695573`*^9, 
   3.683694812720703*^9, 3.683695238968629*^9, 3.6836956078861656`*^9, 
   3.683696084790121*^9, 3.683696356982915*^9, 3.6836966490404024`*^9, 
-  3.6836969363729777`*^9}],
+  3.683696934208936*^9, 3.68378685393321*^9, 3.6837874278723974`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","mxsst",
    "\"Using maximum number of grid points \\!\\(\\*RowBox[{\\\"100\\\"}]\\) \
 allowed by the MaxPoints or MinStepSize options for independent variable \
-\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,51,15,28734836391047261716,"Local"},
+\\!\\(\\*RowBox[{\\\"y\\\"}]\\).\"",2,24,11,28735164661355349460,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -606,14 +607,14 @@ allowed by the MaxPoints or MinStepSize options for independent variable \
   3.683427751862856*^9, 3.6836546450991945`*^9, 3.6836567744695573`*^9, 
   3.683694812720703*^9, 3.683695238968629*^9, 3.6836956078861656`*^9, 
   3.683696084790121*^9, 3.683696356982915*^9, 3.6836966490404024`*^9, 
-  3.6836969382889924`*^9}],
+  3.683696934208936*^9, 3.68378685393321*^9, 3.68378742914347*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
 \\\"::\\\", \\\"mxsst\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,51,16,28734836391047261716,"Local"},
+during this calculation.\"",2,24,12,28735164661355349460,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.68332250182294*^9, 3.683351853817677*^9, 
   3.6833524717302427`*^9, 3.683397660692191*^9, 3.6834014933785315`*^9, 
@@ -622,7 +623,7 @@ during this calculation.\"",2,51,16,28734836391047261716,"Local"},
   3.683427751862856*^9, 3.6836546450991945`*^9, 3.6836567744695573`*^9, 
   3.683694812720703*^9, 3.683695238968629*^9, 3.6836956078861656`*^9, 
   3.683696084790121*^9, 3.683696356982915*^9, 3.6836966490404024`*^9, 
-  3.6836969382889924`*^9}]
+  3.683696934208936*^9, 3.68378685393321*^9, 3.6837874291474705`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -675,17 +676,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`jj$$ = 7, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`jj$$ = 11, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`jj$$], 1, 20, 1}}, Typeset`size$$ = {
     477., {110., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`jj$58407$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`jj$44313$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`jj$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`jj$$, $CellContext`jj$58407$$, 0]}, 
+        Hold[$CellContext`jj$$, $CellContext`jj$44313$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -717,7 +718,8 @@ Cell[BoxData[
    3.6836571017188635`*^9, 3.683694900943159*^9, {3.6836950515434713`*^9, 
    3.683695065525532*^9}, {3.683695124023363*^9, 3.683695152695076*^9}, 
    3.6836957768295393`*^9, 3.6836958297021365`*^9, 3.68369617888398*^9, 
-   3.6836964462130833`*^9, 3.683696726309752*^9, 3.6836971051251574`*^9}]
+   3.6836964462130833`*^9, 3.683696726309752*^9, 3.6836971051251574`*^9, 
+   3.6837873951911488`*^9, 3.6837876300765767`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -740,27 +742,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 3613, 87, 297, "Input"],
-Cell[4174, 109, 523, 9, 30, "Input"],
-Cell[4700, 120, 462, 9, 30, "Input"],
-Cell[5165, 131, 683, 15, 30, "Input"],
-Cell[5851, 148, 438, 12, 30, "Input"],
-Cell[6292, 162, 572, 13, 30, "Input"],
-Cell[6867, 177, 823, 21, 50, "Input"],
-Cell[7693, 200, 424, 11, 30, "Input"],
-Cell[8120, 213, 444, 10, 30, "Input"],
-Cell[8567, 225, 459, 12, 30, "Input"],
+Cell[4174, 109, 537, 10, 30, "Input"],
+Cell[4714, 121, 462, 9, 30, "Input"],
+Cell[5179, 132, 742, 15, 30, "Input"],
+Cell[5924, 149, 438, 12, 30, "Input"],
+Cell[6365, 163, 572, 13, 30, "Input"],
+Cell[6940, 178, 823, 21, 50, "Input"],
+Cell[7766, 201, 424, 11, 30, "Input"],
+Cell[8193, 214, 444, 10, 30, "Input"],
+Cell[8640, 226, 459, 12, 30, "Input"],
 Cell[CellGroupData[{
-Cell[9051, 241, 12919, 319, 506, "Input"],
-Cell[21973, 562, 843, 14, 21, "Message"],
-Cell[22819, 578, 843, 14, 21, "Message"],
-Cell[23665, 594, 843, 14, 21, "Message"],
-Cell[24511, 610, 824, 14, 21, "Message"]
+Cell[9124, 242, 12919, 319, 506, "Input"],
+Cell[22046, 563, 885, 14, 21, "Message"],
+Cell[22934, 579, 886, 14, 21, "Message"],
+Cell[23823, 595, 883, 14, 21, "Message"],
+Cell[24709, 611, 867, 14, 21, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25372, 629, 1833, 43, 107, "Input"],
-Cell[27208, 674, 2452, 45, 344, "Output"]
+Cell[25613, 630, 1833, 43, 107, "Input"],
+Cell[27449, 675, 2505, 46, 344, "Output"]
 }, Open  ]],
-Cell[29675, 722, 92, 1, 30, "Input"]
+Cell[29969, 724, 92, 1, 30, "Input"]
 }
 ]
 *)
