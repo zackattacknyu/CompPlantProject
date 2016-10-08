@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     56916,       1331]
-NotebookOptionsPosition[     55506,       1281]
-NotebookOutlinePosition[     55848,       1296]
-CellTagsIndexPosition[     55805,       1293]
+NotebookDataLength[     57837,       1354]
+NotebookOptionsPosition[     56425,       1304]
+NotebookOutlinePosition[     56767,       1319]
+CellTagsIndexPosition[     56724,       1316]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -719,6 +719,15 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"u", "[", 
           RowBox[{"x", ",", "t"}], "]"}], "\[Equal]", 
+         RowBox[{"vals3", "[", 
+          RowBox[{"x", ",", "t"}], "]"}]}], ",", 
+        RowBox[{"x", "\[Equal]", 
+         RowBox[{"0.5", "-", "epsilon"}]}]}], "]"}], ",", 
+      RowBox[{"DirichletCondition", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"u", "[", 
+          RowBox[{"x", ",", "t"}], "]"}], "\[Equal]", 
          RowBox[{
           RowBox[{"-", "20"}], "x", 
           RowBox[{"(", 
@@ -731,15 +740,17 @@ Cell[BoxData[
      RowBox[{"t", ",", "0", ",", "maxT2"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6849585447746067`*^9, 3.6849585451906304`*^9}, {
   3.6849585773824716`*^9, 3.6849585816767173`*^9}, {3.684958612102457*^9, 
-  3.6849586381019444`*^9}, {3.684958793382826*^9, 3.684958836341283*^9}}],
+  3.6849586381019444`*^9}, {3.684958793382826*^9, 3.684958836341283*^9}, {
+  3.6849592772995043`*^9, 3.6849593085212903`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,22,17,28743096247829708556,"Local"},
+Adding artificial diffusion may help.\"",2,27,19,28743096247829708556,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9}],
+ CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
+  3.684959309287334*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -931,7 +942,8 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.6849586417881556`*^9, 3.6849588369573183`*^9}]
+ CellChangeTimes->{3.6849586417881556`*^9, 3.6849588369573183`*^9, 
+  3.68495930939034*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -970,6 +982,15 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"u", "[", 
           RowBox[{"x", ",", "t"}], "]"}], "\[Equal]", 
+         RowBox[{"vals3", "[", 
+          RowBox[{"x", ",", "t"}], "]"}]}], ",", 
+        RowBox[{"x", "\[Equal]", 
+         RowBox[{"0.5", "+", "epsilon"}]}]}], "]"}], ",", 
+      RowBox[{"DirichletCondition", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"u", "[", 
+          RowBox[{"x", ",", "t"}], "]"}], "\[Equal]", 
          RowBox[{
           RowBox[{"-", "20"}], "x", 
           RowBox[{"(", 
@@ -980,15 +1001,16 @@ Cell[BoxData[
       RowBox[{"0.5", "+", "epsilon"}], ",", "1"}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{"t", ",", "0", ",", "maxT2"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6849588638768578`*^9, 3.684958887845229*^9}}],
+ CellChangeTimes->{{3.6849588638768578`*^9, 3.684958887845229*^9}, {
+  3.684959339379055*^9, 3.6849593460494366`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,24,18,28743096247829708556,"Local"},
+Adding artificial diffusion may help.\"",2,29,20,28743096247829708556,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.684958891040412*^9}],
+ CellChangeTimes->{3.684958891040412*^9, 3.6849593466264696`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -1180,7 +1202,7 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.684958891082414*^9}]
+ CellChangeTimes->{3.684958891082414*^9, 3.6849593467304754`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1233,17 +1255,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.28, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0.78, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {490., {106., 113.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$62454$$ = 0}, 
+    True, $CellContext`t$85085$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$62454$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$85085$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1276,7 +1298,8 @@ $CellContext`x > 0.5 + $CellContext`epsilon}}],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.6849587038577056`*^9, 3.6849587406828117`*^9, 3.684958840501521*^9, {
-   3.6849589885929914`*^9, 3.684958994963356*^9}}]
+   3.6849589885929914`*^9, 3.684958994963356*^9}, {3.6849593240021753`*^9, 
+   3.684959349671644*^9}}]
 }, Open  ]]
 },
 WindowSize->{751, 821},
@@ -1320,18 +1343,18 @@ Cell[27193, 642, 1743, 35, 336, "Output"]
 }, Open  ]],
 Cell[28951, 680, 155, 3, 30, "Input"],
 Cell[CellGroupData[{
-Cell[29131, 687, 1715, 46, 126, "Input"],
-Cell[30849, 735, 319, 6, 21, "Message"],
-Cell[31171, 743, 9255, 190, 79, "Output"]
+Cell[29131, 687, 2101, 56, 145, "Input"],
+Cell[31235, 745, 344, 7, 21, "Message"],
+Cell[31582, 754, 9279, 191, 79, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40463, 938, 1564, 44, 126, "Input"],
-Cell[42030, 984, 293, 6, 21, "Message"],
-Cell[42326, 992, 9229, 190, 79, "Output"]
+Cell[40898, 950, 1948, 54, 145, "Input"],
+Cell[42849, 1006, 317, 6, 21, "Message"],
+Cell[43169, 1014, 9253, 190, 79, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[51592, 1187, 1620, 43, 126, "Input"],
-Cell[53215, 1232, 2275, 46, 369, "Output"]
+Cell[52459, 1209, 1620, 43, 126, "Input"],
+Cell[54082, 1254, 2327, 47, 369, "Output"]
 }, Open  ]]
 }
 ]
