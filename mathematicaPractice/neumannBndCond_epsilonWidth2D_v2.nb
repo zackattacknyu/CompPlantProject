@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     46806,       1161]
-NotebookOptionsPosition[     45342,       1111]
-NotebookOutlinePosition[     45684,       1126]
-CellTagsIndexPosition[     45641,       1123]
+NotebookDataLength[     53149,       1252]
+NotebookOptionsPosition[     51316,       1193]
+NotebookOutlinePosition[     51657,       1208]
+CellTagsIndexPosition[     51614,       1205]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -90,10 +90,64 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,3,1,29742321800335357543,"Local"},
+Adding artificial diffusion may help.\"",2,7,10,29742322685110539650,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6849575439673634`*^9, 3.6849960809400086`*^9, 
-  3.6849961816267676`*^9, 3.6862778164188595`*^9}],
+  3.6849961816267676`*^9, 3.6862778164188595`*^9, 3.6862781058727226`*^9, 
+  3.686278157512953*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TetGenDetectIntersectingFacets","tetpts",
+   "\"The points \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\
+\"0.`\\\", \\\",\\\", \\\"0.10752688172043012`\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"0.21505376344086025`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.3225806451612903`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.4301075268817205`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.5376344086021505`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"39\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"4.838709677419355`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"4.946236559139785`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.053763440860215`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.161290322580645`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.268817204301075`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"3872\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]\\) could not be set to the TetGen instance.\"",2,7,11,
+   29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849575439673634`*^9, 3.6849960809400086`*^9, 
+  3.6849961816267676`*^9, 3.6862778164188595`*^9, 3.6862781058727226`*^9, 
+  3.6862781612814493`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","fememib",
+   "\"The input has or generated an intersecting boundary and cannot be \
+processed.\"",2,7,12,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849575439673634`*^9, 3.6849960809400086`*^9, 
+  3.6849961816267676`*^9, 3.6862778164188595`*^9, 3.6862781058727226`*^9, 
+  3.6862781623111315`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","femtemnm","\"A mesh could not be generated.\"",
+   2,7,13,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849575439673634`*^9, 3.6849960809400086`*^9, 
+  3.6849961816267676`*^9, 3.6862778164188595`*^9, 3.6862781058727226`*^9, 
+  3.686278163343816*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -290,7 +344,8 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.6849575451614323`*^9, 3.6849960946227913`*^9, 
-  3.684996193119425*^9, 3.686277856291296*^9}]
+  3.684996193119425*^9, 3.686277856291296*^9, 3.686278123842635*^9, 
+  3.6862781749385014`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -356,16 +411,71 @@ Cell[BoxData[
      RowBox[{"t", ",", "0", ",", "maxT2"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.68495761366135*^9, 3.6849576325574303`*^9}, 
    3.6849577679331737`*^9, {3.684996110946725*^9, 3.6849961157299986`*^9}, 
-   3.6849961793146353`*^9, {3.686278033965067*^9, 3.686278034052124*^9}}],
+   3.6849961793146353`*^9, {3.686278033965067*^9, 3.686278034052124*^9}, {
+   3.686278070597342*^9, 3.68627807197526*^9}}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,5,2,29742321800335357543,"Local"},
+Adding artificial diffusion may help.\"",2,9,14,29742322685110539650,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6849576355226*^9, 3.684957768436202*^9, 
-  3.684996118839176*^9, 3.6849961969556446`*^9, 3.6862778565654774`*^9}],
+  3.684996118839176*^9, 3.6849961969556446`*^9, 3.6862778565654774`*^9, 
+  3.6862780734142094`*^9, 3.686278175067587*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TetGenDetectIntersectingFacets","tetpts",
+   "\"The points \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\
+\"0.`\\\", \\\",\\\", \\\"0.10752688172043012`\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"0.21505376344086025`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.3225806451612903`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.4301075268817205`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.5376344086021505`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"39\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"4.838709677419355`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"4.946236559139785`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.053763440860215`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.161290322580645`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"5.268817204301075`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"3872\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]\\) could not be set to the TetGen instance.\"",2,9,15,
+   29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849576355226*^9, 3.684957768436202*^9, 
+  3.684996118839176*^9, 3.6849961969556446`*^9, 3.6862778565654774`*^9, 
+  3.6862780734142094`*^9, 3.686278178648961*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","fememib",
+   "\"The input has or generated an intersecting boundary and cannot be \
+processed.\"",2,9,16,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849576355226*^9, 3.684957768436202*^9, 
+  3.684996118839176*^9, 3.6849961969556446`*^9, 3.6862778565654774`*^9, 
+  3.6862780734142094`*^9, 3.686278179687649*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","femtemnm","\"A mesh could not be generated.\"",
+   2,9,17,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849576355226*^9, 3.684957768436202*^9, 
+  3.684996118839176*^9, 3.6849961969556446`*^9, 3.6862778565654774`*^9, 
+  3.6862780734142094`*^9, 3.6862781807213345`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -562,7 +672,8 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.684957635565603*^9, 3.684957768500206*^9, 
-  3.684996130103821*^9, 3.6849962083372955`*^9, 3.68627789252131*^9}]
+  3.684996130103821*^9, 3.6849962083372955`*^9, 3.68627789252131*^9, 
+  3.6862780999447985`*^9, 3.686278192469121*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -596,17 +707,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.32, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {457., {66., 71.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {462., {141., 147.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$5595$$ = 0}, 
+    True, $CellContext`t$6800$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$5595$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$6800$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -618,7 +729,7 @@ Cell[BoxData[
         PlotLegends -> {"alpha=0.02", "alpha=0.08"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{508., {112., 119.}},
+     ImageSizeCache->{513., {187., 194.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -632,7 +743,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.6849576470102572`*^9, 3.6849577037365017`*^9, {3.68495775230728*^9, 
    3.684957773967519*^9}, 3.6849961602315435`*^9, {3.6849962126515417`*^9, 
-   3.6849962306685724`*^9}, 3.686277892638387*^9}]
+   3.6849962306685724`*^9}, 3.686277892638387*^9, 3.6862781929654503`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -753,98 +864,69 @@ Cell[BoxData[
 
 Cell[BoxData[
  TemplateBox[{
-  "NDSolveValue","underdet",
-   "\"There are more dependent variables, \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{RowBox[{\\\"u\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
-\\\"y\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"vals3\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\
-\",\\\", \\\"t\\\"}], \\\"]\\\"}]}], \\\"}\\\"}]\\), than equations, so the \
-system is underdetermined.\"",2,10,3,29742321800335357543,"Local"},
+  "NDSolveValue","femcscd",
+   "\"The PDE is convection dominated and the result may not be stable. \
+Adding artificial diffusion may help.\"",2,14,18,29742322685110539650,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
   3.684959309287334*^9, 3.6849964056005783`*^9, 3.684996448780048*^9, 
-  3.686277893281814*^9}],
+  3.686277893281814*^9, 3.686278194086193*^9}],
 
 Cell[BoxData[
- RowBox[{"NDSolveValue", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        SuperscriptBox["u", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "1"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"x", ",", "y", ",", "t"}], "]"}], "-", 
-       RowBox[{"0.02`", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           SuperscriptBox["u", 
-            TagBox[
-             RowBox[{"(", 
-              RowBox[{"0", ",", "2", ",", "0"}], ")"}],
-             Derivative],
-            MultilineFunction->None], "[", 
-           RowBox[{"x", ",", "y", ",", "t"}], "]"}], "+", 
-          RowBox[{
-           SuperscriptBox["u", 
-            TagBox[
-             RowBox[{"(", 
-              RowBox[{"2", ",", "0", ",", "0"}], ")"}],
-             Derivative],
-            MultilineFunction->None], "[", 
-           RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ")"}]}]}], "\[Equal]", 
-      RowBox[{
-       RowBox[{"NeumannValue", "[", 
-        RowBox[{"0", ",", 
-         RowBox[{
-          RowBox[{"x", "\[Equal]", "0"}], "||", 
-          RowBox[{"y", "\[Equal]", "0"}], "||", 
-          RowBox[{"y", "\[Equal]", "1"}]}]}], "]"}], "+", 
-       RowBox[{"NeumannValue", "[", 
-        RowBox[{
-         RowBox[{
-          SuperscriptBox["vals3", 
-           TagBox[
-            RowBox[{"(", 
-             RowBox[{"0", ",", "0", ",", "1"}], ")"}],
-            Derivative],
-           MultilineFunction->None], "[", 
-          RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
-         RowBox[{"x", "\[Equal]", "0.4`"}]}], "]"}]}]}], ",", 
-     RowBox[{"DirichletCondition", "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"u", "[", 
-         RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-        RowBox[{"vals3", "[", 
-         RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ",", 
-       RowBox[{"x", "\[Equal]", "0.4`"}]}], "]"}], ",", 
-     RowBox[{"DirichletCondition", "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"u", "[", 
-         RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-        RowBox[{"20", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "+", "y"}], ")"}], " ", "y"}]}], ",", 
-       RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "0", ",", "0.4`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{3.6862778933248415`*^9}]
+ TemplateBox[{
+  "TetGenDetectIntersectingFacets","tetpts",
+   "\"The points \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\
+\"0.`\\\", \\\",\\\", \\\"0.07936507936507936`\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"0.15873015873015872`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.23809523809523808`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.31746031746031744`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"0.3968253968253968`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"39\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\
+\"3.5714285714285716`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"3.6507936507936507`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"3.7301587301587302`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"3.8095238095238093`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", \\\"0.`\\\", \\\",\\\", \
+\\\"3.888888888888889`\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"4896\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]\\) could not be set to the TetGen instance.\"",2,14,19,
+   29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
+  3.684959309287334*^9, 3.6849964056005783`*^9, 3.684996448780048*^9, 
+  3.686277893281814*^9, 3.686278197817666*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","fememib",
+   "\"The input has or generated an intersecting boundary and cannot be \
+processed.\"",2,14,20,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
+  3.684959309287334*^9, 3.6849964056005783`*^9, 3.684996448780048*^9, 
+  3.686277893281814*^9, 3.6862781988613586`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve`FEM`ToElementMesh","femtemnm","\"A mesh could not be generated.\"",
+   2,14,21,29742322685110539650,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
+  3.684959309287334*^9, 3.6849964056005783`*^9, 3.684996448780048*^9, 
+  3.686277893281814*^9, 3.6862781999140563`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.6862778933248415`*^9, 3.68627820563785*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1109,8 +1191,8 @@ during this calculation.\"",2,13,12,29742321800335357543,"Local"},
  CellChangeTimes->{3.686277895694412*^9}]
 }, Open  ]]
 },
-WindowSize->{751, 821},
-WindowMargins->{{Automatic, 98}, {36, Automatic}},
+WindowSize->{751, 722},
+WindowMargins->{{Automatic, 98}, {Automatic, 3}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1129,39 +1211,48 @@ Cell[558, 20, 185, 4, 30, "Input"],
 Cell[746, 26, 138, 3, 30, "Input"],
 Cell[CellGroupData[{
 Cell[909, 33, 1909, 53, 126, "Input"],
-Cell[2821, 88, 368, 7, 21, "Message"],
-Cell[3192, 97, 9516, 195, 72, "Output"]
+Cell[2821, 88, 418, 8, 21, "Message"],
+Cell[3242, 98, 2058, 32, 73, "Message"],
+Cell[5303, 132, 406, 8, 21, "Message"],
+Cell[5712, 142, 357, 7, 21, "Message"],
+Cell[6072, 151, 9565, 196, 72, "Output"]
 }, Open  ]],
-Cell[12723, 295, 252, 5, 30, "Input"],
+Cell[15652, 350, 252, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[13000, 304, 2031, 54, 126, "Input"],
-Cell[15034, 360, 384, 7, 21, "Message"],
-Cell[15421, 369, 9535, 195, 72, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[24993, 569, 920, 24, 50, "Input"],
-Cell[25916, 595, 1992, 39, 248, "Output"]
-}, Open  ]],
-Cell[27923, 637, 660, 16, 30, "Input"],
-Cell[28586, 655, 557, 15, 30, "Input"],
-Cell[29146, 672, 155, 3, 30, "Input"],
-Cell[CellGroupData[{
-Cell[29326, 679, 2805, 72, 164, "Input"],
-Cell[32134, 753, 690, 12, 39, "Message"],
-Cell[32827, 767, 2742, 79, 117, "Output"]
+Cell[15929, 359, 2080, 55, 126, "Input"],
+Cell[18012, 416, 434, 8, 21, "Message"],
+Cell[18449, 426, 2072, 32, 73, "Message"],
+Cell[20524, 460, 420, 8, 21, "Message"],
+Cell[20947, 470, 375, 7, 21, "Message"],
+Cell[21325, 479, 9584, 196, 72, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35606, 851, 1948, 54, 126, "Input"],
-Cell[37557, 907, 683, 12, 39, "Message"],
-Cell[38243, 921, 1908, 57, 92, "Output"]
+Cell[30946, 680, 920, 24, 50, "Input"],
+Cell[31869, 706, 2015, 39, 398, "Output"]
+}, Open  ]],
+Cell[33899, 748, 660, 16, 30, "Input"],
+Cell[34562, 766, 557, 15, 30, "Input"],
+Cell[35122, 783, 155, 3, 30, "Input"],
+Cell[CellGroupData[{
+Cell[35302, 790, 2805, 72, 164, "Input"],
+Cell[38110, 864, 437, 8, 21, "Message"],
+Cell[38550, 874, 2081, 32, 73, "Message"],
+Cell[40634, 908, 425, 8, 21, "Message"],
+Cell[41062, 918, 378, 7, 21, "Message"],
+Cell[41443, 927, 100, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40188, 983, 1620, 43, 126, "Input"],
-Cell[41811, 1028, 2346, 47, 330, "Output"],
-Cell[44160, 1077, 271, 6, 21, "Message"],
-Cell[44434, 1085, 272, 6, 21, "Message"],
-Cell[44709, 1093, 268, 6, 21, "Message"],
-Cell[44980, 1101, 346, 7, 21, "Message"]
+Cell[41580, 933, 1948, 54, 126, "Input"],
+Cell[43531, 989, 683, 12, 39, "Message"],
+Cell[44217, 1003, 1908, 57, 92, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46162, 1065, 1620, 43, 126, "Input"],
+Cell[47785, 1110, 2346, 47, 330, "Output"],
+Cell[50134, 1159, 271, 6, 21, "Message"],
+Cell[50408, 1167, 272, 6, 21, "Message"],
+Cell[50683, 1175, 268, 6, 21, "Message"],
+Cell[50954, 1183, 346, 7, 21, "Message"]
 }, Open  ]]
 }
 ]
