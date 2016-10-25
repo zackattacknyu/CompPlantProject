@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     53149,       1252]
-NotebookOptionsPosition[     51316,       1193]
-NotebookOutlinePosition[     51657,       1208]
-CellTagsIndexPosition[     51614,       1205]
+NotebookDataLength[     53577,       1265]
+NotebookOptionsPosition[     51743,       1206]
+NotebookOutlinePosition[     52084,       1221]
+CellTagsIndexPosition[     52041,       1218]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -168,8 +168,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -247,8 +248,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -496,8 +498,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -575,8 +578,9 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -711,7 +715,7 @@ Cell[BoxData[
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {462., {141., 147.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {462., {140., 146.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`t$6800$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -729,7 +733,7 @@ Cell[BoxData[
         PlotLegends -> {"alpha=0.02", "alpha=0.08"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{513., {187., 194.}},
+     ImageSizeCache->{513., {186., 193.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -944,12 +948,21 @@ Cell[BoxData[
           RowBox[{"u", "[", 
            RowBox[{"x", ",", "t"}], "]"}], ",", "t"}], "]"}], "-", 
         RowBox[{"0.02", "*", 
-         RowBox[{"D", "[", 
+         RowBox[{"(", 
           RowBox[{
-           RowBox[{"u", "[", 
-            RowBox[{"x", ",", "t"}], "]"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"x", ",", "2"}], "}"}]}], "]"}]}]}], "\[Equal]", 
+           RowBox[{"D", "[", 
+            RowBox[{
+             RowBox[{"u", "[", 
+              RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"x", ",", "2"}], "}"}]}], "]"}], "+", 
+           RowBox[{"D", "[", 
+            RowBox[{
+             RowBox[{"u", "[", 
+              RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"y", ",", "2"}], "}"}]}], "]"}]}], ")"}]}]}], 
+       "\[Equal]", 
        RowBox[{
         RowBox[{"NeumannValue", "[", 
          RowBox[{"0", ",", 
@@ -985,7 +998,7 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"t", ",", "0", ",", "maxT2"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6849588638768578`*^9, 3.684958887845229*^9}, {
-  3.684959339379055*^9, 3.6849593460494366`*^9}}],
+   3.684959339379055*^9, 3.6849593460494366`*^9}, 3.6864248270008965`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1215,44 +1228,44 @@ Cell[2821, 88, 418, 8, 21, "Message"],
 Cell[3242, 98, 2058, 32, 73, "Message"],
 Cell[5303, 132, 406, 8, 21, "Message"],
 Cell[5712, 142, 357, 7, 21, "Message"],
-Cell[6072, 151, 9565, 196, 72, "Output"]
+Cell[6072, 151, 9609, 198, 72, "Output"]
 }, Open  ]],
-Cell[15652, 350, 252, 5, 30, "Input"],
+Cell[15696, 352, 252, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[15929, 359, 2080, 55, 126, "Input"],
-Cell[18012, 416, 434, 8, 21, "Message"],
-Cell[18449, 426, 2072, 32, 73, "Message"],
-Cell[20524, 460, 420, 8, 21, "Message"],
-Cell[20947, 470, 375, 7, 21, "Message"],
-Cell[21325, 479, 9584, 196, 72, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[30946, 680, 920, 24, 50, "Input"],
-Cell[31869, 706, 2015, 39, 398, "Output"]
-}, Open  ]],
-Cell[33899, 748, 660, 16, 30, "Input"],
-Cell[34562, 766, 557, 15, 30, "Input"],
-Cell[35122, 783, 155, 3, 30, "Input"],
-Cell[CellGroupData[{
-Cell[35302, 790, 2805, 72, 164, "Input"],
-Cell[38110, 864, 437, 8, 21, "Message"],
-Cell[38550, 874, 2081, 32, 73, "Message"],
-Cell[40634, 908, 425, 8, 21, "Message"],
-Cell[41062, 918, 378, 7, 21, "Message"],
-Cell[41443, 927, 100, 1, 30, "Output"]
+Cell[15973, 361, 2080, 55, 126, "Input"],
+Cell[18056, 418, 434, 8, 21, "Message"],
+Cell[18493, 428, 2072, 32, 73, "Message"],
+Cell[20568, 462, 420, 8, 21, "Message"],
+Cell[20991, 472, 375, 7, 21, "Message"],
+Cell[21369, 481, 9628, 198, 72, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41580, 933, 1948, 54, 126, "Input"],
-Cell[43531, 989, 683, 12, 39, "Message"],
-Cell[44217, 1003, 1908, 57, 92, "Output"]
+Cell[31034, 684, 920, 24, 50, "Input"],
+Cell[31957, 710, 2015, 39, 396, "Output"]
+}, Open  ]],
+Cell[33987, 752, 660, 16, 30, "Input"],
+Cell[34650, 770, 557, 15, 30, "Input"],
+Cell[35210, 787, 155, 3, 30, "Input"],
+Cell[CellGroupData[{
+Cell[35390, 794, 2805, 72, 164, "Input"],
+Cell[38198, 868, 437, 8, 21, "Message"],
+Cell[38638, 878, 2081, 32, 73, "Message"],
+Cell[40722, 912, 425, 8, 21, "Message"],
+Cell[41150, 922, 378, 7, 21, "Message"],
+Cell[41531, 931, 100, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46162, 1065, 1620, 43, 126, "Input"],
-Cell[47785, 1110, 2346, 47, 330, "Output"],
-Cell[50134, 1159, 271, 6, 21, "Message"],
-Cell[50408, 1167, 272, 6, 21, "Message"],
-Cell[50683, 1175, 268, 6, 21, "Message"],
-Cell[50954, 1183, 346, 7, 21, "Message"]
+Cell[41668, 937, 2287, 63, 126, "Input"],
+Cell[43958, 1002, 683, 12, 39, "Message"],
+Cell[44644, 1016, 1908, 57, 92, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46589, 1078, 1620, 43, 126, "Input"],
+Cell[48212, 1123, 2346, 47, 330, "Output"],
+Cell[50561, 1172, 271, 6, 21, "Message"],
+Cell[50835, 1180, 272, 6, 21, "Message"],
+Cell[51110, 1188, 268, 6, 21, "Message"],
+Cell[51381, 1196, 346, 7, 21, "Message"]
 }, Open  ]]
 }
 ]
