@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     77355,       1816]
-NotebookOptionsPosition[     75509,       1756]
-NotebookOutlinePosition[     75850,       1771]
-CellTagsIndexPosition[     75807,       1768]
+NotebookDataLength[     98116,       2193]
+NotebookOptionsPosition[     95587,       2117]
+NotebookOutlinePosition[     95928,       2132]
+CellTagsIndexPosition[     95885,       2129]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -102,11 +102,12 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,2,20,29743283377532558990,"Local"},
+Adding artificial diffusion may help.\"",2,7,1,28752898519382534660,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6849575439673634`*^9, 3.6849960809400086`*^9, 
   3.6849961816267676`*^9, 3.6862778164188595`*^9, 3.6862781058727226`*^9, 
-  3.686278157512953*^9, 3.6864256563101826`*^9}],
+  3.686278157512953*^9, 3.6864256563101826`*^9, 3.6864519208560224`*^9, 
+  3.686452148661052*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -127,9 +128,8 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 
-                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])}]], 
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -159,8 +159,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-               GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                   "]]}}}, AspectRatio -> 1, Axes -> 
+               False, Background -> GrayLevel[0.93], Frame -> True, 
+               FrameStyle -> Directive[
                  GrayLevel[0.7], 
                  Thickness[Tiny]], FrameTicks -> None, 
                ImageSize -> {Automatic, 
@@ -207,9 +208,8 @@ q5SZmRFAL++xNeOlE0Dwt3AR
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 
-                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])}]], 
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
               GraphicsBox[{{
                  GrayLevel[0.6], 
                  AbsolutePointSize[5], 
@@ -239,8 +239,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-               GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                   "]]}}}, AspectRatio -> 1, Axes -> 
+               False, Background -> GrayLevel[0.93], Frame -> True, 
+               FrameStyle -> Directive[
                  GrayLevel[0.7], 
                  Thickness[Tiny]], FrameTicks -> None, 
                ImageSize -> {Automatic, 
@@ -306,23 +307,27 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   Selectable->False]], "Output",
  CellChangeTimes->{3.6849575451614323`*^9, 3.6849960946227913`*^9, 
   3.684996193119425*^9, 3.686277856291296*^9, 3.686278123842635*^9, 
-  3.6862781749385014`*^9, 3.686425698243983*^9}]
+  3.6862781749385014`*^9, 3.686425698243983*^9, 3.6864519362429028`*^9, 
+  3.686452161923811*^9}]
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"initFvals", " ", "=", " ", 
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{"vals2", "[", 
-     RowBox[{
-      RowBox[{"i", "/", "100"}], ",", "0.5", ",", 
-      RowBox[{"ti", "*", 
-       RowBox[{"maxT2", "/", "100"}]}]}], "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"i", ",", "0", ",", "100"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"ti", ",", "0", ",", "100"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.686426793169348*^9, 3.6864268100471125`*^9}}],
+ RowBox[{
+  RowBox[{"initFvals", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"vals2", "[", 
+      RowBox[{
+       RowBox[{"i", "/", "100"}], ",", "0.5", ",", 
+       RowBox[{"ti", "*", 
+        RowBox[{"maxT2", "/", "100"}]}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "0", ",", "100"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ti", ",", "0", ",", "100"}], "}"}]}], "]"}]}], ";"}]], "Input",\
+
+ CellChangeTimes->{{3.686426793169348*^9, 3.6864268100471125`*^9}, 
+   3.686452155458441*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -391,7 +396,7 @@ Cell[BoxData[
     RowBox[{"(", 
      RowBox[{
       RowBox[{"alphaR", " ", "=", " ", 
-       RowBox[{"alphRodValues", "[", 
+       RowBox[{"alphaRodValues", "[", 
         RowBox[{"[", "alphaInd", "]"}], "]"}]}], ";", 
       RowBox[{"vals3", " ", "=", " ", 
        RowBox[{"NDSolveValue", "[", 
@@ -439,6 +444,7 @@ Cell[BoxData[
                RowBox[{"(", 
                 RowBox[{"y", "-", "1"}], ")"}]}]}], ",", 
              RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+         
          RowBox[{"{", 
           RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
          RowBox[{"{", 
@@ -521,6 +527,7 @@ Cell[BoxData[
                RowBox[{"(", 
                 RowBox[{"y", "-", "1"}], ")"}]}]}], ",", 
              RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+         
          RowBox[{"{", 
           RowBox[{"x", ",", "0", ",", 
            RowBox[{"0.5", "-", "epsilon"}]}], "}"}], ",", 
@@ -586,6 +593,7 @@ Cell[BoxData[
                RowBox[{"(", 
                 RowBox[{"x", "-", "1"}], ")"}]}]}], ",", 
              RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+         
          RowBox[{"{", 
           RowBox[{"x", ",", 
            RowBox[{"0.5", "+", "epsilon"}], ",", "1"}], "}"}], ",", 
@@ -644,13 +652,358 @@ Cell[BoxData[
    3.686278070597342*^9, 3.68627807197526*^9}, {3.6864264929899836`*^9, 
    3.6864264960682487`*^9}, {3.6864265641027336`*^9, 3.686426728930495*^9}, {
    3.686426948520177*^9, 3.6864269999288907`*^9}, 3.6864271039807034`*^9, 
-   3.686443868182999*^9}],
+   3.686443868182999*^9, 3.686452302948877*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part","partd",
+   "\"Part specification \\!\\(\\*RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"",2,12,2,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176053619*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part","partd",
+   "\"Part specification \\!\\(\\*RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"",2,12,3,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.68645217607562*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","femcnmd",
+   "\"The PDE coefficient \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
+\", RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]}], \\\",\
+\\\", \\\"0\\\", \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+RowBox[{\\\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \
+\\\",\\\", \\\"0\\\"}], \\\"}\\\"}]}], \\\"}\\\"}]\\) does not evaluate to a \
+numeric matrix of dimensions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"3\\\", \
+\\\",\\\", \\\"3\\\"}], \\\"}\\\"}]\\) at the coordinate \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0.5`\\\", \\\",\\\", \\\"0.5`\\\", \\\
+\",\\\", \\\"5.`\\\"}], \\\"}\\\"}]\\).\"",2,12,4,28752898519382534660,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176092621*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","femcnmd",
+   "\"The PDE coefficient \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
+\", RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]}], \\\",\
+\\\", \\\"0\\\", \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+RowBox[{\\\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \
+\\\",\\\", \\\"0\\\"}], \\\"}\\\"}]}], \\\"}\\\"}]\\) does not evaluate to a \
+numeric matrix of dimensions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"3\\\", \
+\\\",\\\", \\\"3\\\"}], \\\"}\\\"}]\\) at the coordinate \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0.5`\\\", \\\",\\\", \\\"0.5`\\\", \\\
+\",\\\", \\\"5.`\\\"}], \\\"}\\\"}]\\).\"",2,12,5,28752898519382534660,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176109622*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","femcnmd",
+   "\"The PDE coefficient \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\
+\", RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]}], \\\",\
+\\\", \\\"0\\\", \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+RowBox[{\\\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\",\\\", \\\"0\\\"}], \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \
+\\\",\\\", \\\"0\\\"}], \\\"}\\\"}]}], \\\"}\\\"}]\\) does not evaluate to a \
+numeric matrix of dimensions \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"3\\\", \
+\\\",\\\", \\\"3\\\"}], \\\"}\\\"}]\\) at the coordinate \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0.5`\\\", \\\",\\\", \\\"0.5`\\\", \\\
+\",\\\", \\\"5.`\\\"}], \\\"}\\\"}]\\).\"",2,12,6,28752898519382534660,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176126623*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
+\\\"::\\\", \\\"femcnmd\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"",2,12,7,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521761436243`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","derarg",
+   "\"The derivative operator \\!\\(\\*RowBox[{\\\"Derivative\\\", \\\"[\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\"]\\\"}]\\) in \
+\\!\\(\\*RowBox[{SuperscriptBox[RowBox[{\\\"NDSolveValue\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"u\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\" \\\
+\", RowBox[{\\\"(\\\", RowBox[{RowBox[{SuperscriptBox[RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, \
+None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\
+\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\
+\[Equal]\\\", RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\
+\", RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", \
+RowBox[{\\\"y\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\",\\\", \
+RowBox[{\\\"DirichletCondition\\\", \\\"[\\\", \
+RowBox[{RowBox[{RowBox[{\\\"u\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"y\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"\[Equal]\\\", \
+RowBox[{\\\"20\\\", \\\" \\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\
+\"\[RightSkeleton]\\\"}], \\\" \\\", \\\"y\\\"}]}], \\\",\\\", \
+RowBox[{\\\"t\\\", \\\"\[Equal]\\\", \\\"0\\\"}]}], \\\"]\\\"}]}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}], \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}]\\) should act on the pure function.\"",2,12,8,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521761706257`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","derarg",
+   "\"The derivative operator \\!\\(\\*RowBox[{\\\"Derivative\\\", \\\"[\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\"]\\\"}]\\) in \
+\\!\\(\\*RowBox[{SuperscriptBox[RowBox[{\\\"NDSolveValue\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"u\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\" \\\
+\", RowBox[{\\\"(\\\", RowBox[{RowBox[{SuperscriptBox[RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, \
+None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\
+\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\
+\[Equal]\\\", RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\
+\", RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", \
+RowBox[{\\\"y\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\",\\\", \
+RowBox[{\\\"DirichletCondition\\\", \\\"[\\\", \
+RowBox[{RowBox[{RowBox[{\\\"u\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"y\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"\[Equal]\\\", \
+RowBox[{\\\"20\\\", \\\" \\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\
+\"\[RightSkeleton]\\\"}], \\\" \\\", \\\"y\\\"}]}], \\\",\\\", \
+RowBox[{\\\"t\\\", \\\"\[Equal]\\\", \\\"0\\\"}]}], \\\"]\\\"}]}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}], \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}]\\) should act on the pure function.\"",2,12,10,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521762086277`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","ndode",
+   "\"The equations \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"TemporaryVariable$8344\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\
+\\\"x\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\
+\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\
+\"TemporaryVariable$8345\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[\\\"TemporaryVariable$8344\\\", TagBox[RowBox[{\\\"(\\\
+\", RowBox[{\\\"2\\\", \\\",\\\", \\\"0\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\[Equal]\\\", \
+RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \\\",\\\", \
+RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", \
+RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\", \
+\\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\"}\\\"}]\\) are not \
+differential equations or initial conditions in the dependent variables \
+\\!\\(\\*RowBox[{\\\"{\\\", \\\"u\\\", \\\"}\\\"}]\\).\"",2,12,11,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521762276287`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","ndode",
+   "\"The equations \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"TemporaryVariable$8344\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\
+\\\"x\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\
+\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\
+\"TemporaryVariable$8345\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[\\\"TemporaryVariable$8344\\\", TagBox[RowBox[{\\\"(\\\
+\", RowBox[{\\\"2\\\", \\\",\\\", \\\"0\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\[Equal]\\\", \
+RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \\\",\\\", \
+RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", \
+RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\", \
+\\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\"}\\\"}]\\) are not \
+differential equations or initial conditions in the dependent variables \
+\\!\\(\\*RowBox[{\\\"{\\\", \\\"u\\\", \\\"}\\\"}]\\).\"",2,12,12,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521762456303`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","derarg",
+   "\"The derivative operator \\!\\(\\*RowBox[{\\\"Derivative\\\", \\\"[\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\"]\\\"}]\\) in \
+\\!\\(\\*RowBox[{SuperscriptBox[RowBox[{\\\"NDSolveValue\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"u\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\" \\\
+\", RowBox[{\\\"(\\\", RowBox[{RowBox[{SuperscriptBox[RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, \
+None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\
+\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\
+\[Equal]\\\", RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\
+\", RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", \
+RowBox[{\\\"y\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\",\\\", \
+RowBox[{\\\"DirichletCondition\\\", \\\"[\\\", \
+RowBox[{RowBox[{RowBox[{\\\"u\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"y\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"\[Equal]\\\", \
+RowBox[{\\\"20\\\", \\\" \\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\
+\"\[RightSkeleton]\\\"}], \\\" \\\", \\\"y\\\"}]}], \\\",\\\", \
+RowBox[{\\\"t\\\", \\\"\[Equal]\\\", \\\"0\\\"}]}], \\\"]\\\"}]}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}], \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+\\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \\\"y\\\", \\\",\\\", \\\"t\\\"}], \
+\\\"]\\\"}]\\) should act on the pure function.\"",2,12,13,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521762626305`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
+\\\"::\\\", \\\"derarg\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"",2,12,14,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176281632*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","ndode",
+   "\"The equations \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{SuperscriptBox[\\\"TemporaryVariable$8698\\\", \
+TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \
+\\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\
+\\\"x\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"-\\\", RowBox[{RowBox[{\\\
+\"alphRodValues\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\
+\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\
+\"TemporaryVariable$8699\\\", \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}], \\\"+\\\", \
+RowBox[{SuperscriptBox[\\\"TemporaryVariable$8698\\\", TagBox[RowBox[{\\\"(\\\
+\", RowBox[{\\\"2\\\", \\\",\\\", \\\"0\\\"}], \\\")\\\"}], Derivative], \
+Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"x\\\", \\\",\\\", \
+\\\"t\\\"}], \\\"]\\\"}]}], \\\")\\\"}]}]}], \\\"\[Equal]\\\", \
+RowBox[{\\\"NeumannValue\\\", \\\"[\\\", RowBox[{\\\"0\\\", \\\",\\\", \
+RowBox[{RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", \
+RowBox[{\\\"x\\\", \\\"\[Equal]\\\", \\\"1\\\"}], \\\"||\\\", RowBox[{\\\"y\\\
+\", \\\"\[Equal]\\\", \\\"0\\\"}], \\\"||\\\", RowBox[{\\\"y\\\", \
+\\\"\[Equal]\\\", \\\"1\\\"}]}]}], \\\"]\\\"}]}], \\\"}\\\"}]\\) are not \
+differential equations or initial conditions in the dependent variables \
+\\!\\(\\*RowBox[{\\\"{\\\", \\\"u\\\", \\\"}\\\"}]\\).\"",2,12,15,
+   28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864521762976327`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
+\\\"::\\\", \\\"ndode\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"",2,12,16,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686452176315634*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part","partd",
+   "\"Part specification \\!\\(\\*RowBox[{\\\"alphRodValues\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"2\\\", \\\"\[RightDoubleBracket]\\\"}]\\) is \
+longer than depth of object.\"",2,12,17,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.6864535876168065`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"partd\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,12,18,28752898519382534660,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.686451961988375*^9, 3.686453587632406*^9}],
 
 Cell[BoxData["$Aborted"], "Output",
  CellChangeTimes->{3.684957635565603*^9, 3.684957768500206*^9, 
   3.684996130103821*^9, 3.6849962083372955`*^9, 3.68627789252131*^9, 
   3.6862780999447985`*^9, 3.686278192469121*^9, 3.6864257476257133`*^9, 
-  3.686426537554578*^9}]
+  3.686426537554578*^9, 3.686452082782284*^9, 3.686453861094403*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -902,11 +1255,11 @@ Cell[BoxData[
          RowBox[{"ti", ",", "0", ",", "100"}], "}"}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"AppendTo", "[", 
-      RowBox[{"allFvals", ",", "currentFtable"}], "]"}], ";"}], ")"}], ",", 
+      RowBox[{"allFvals2", ",", "currentFtable"}], "]"}], ";"}], ")"}], ",", 
    RowBox[{"{", 
     RowBox[{"alphaInd", ",", "1", ",", "4"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.686427111481039*^9, 3.686427117481322*^9}, 
-   3.6864438713862505`*^9}],
+   3.6864438713862505`*^9, 3.6864519114154825`*^9}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{3.6864265616807313`*^9}],
@@ -940,6 +1293,7 @@ Cell[BoxData[
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
 Adding artificial diffusion may help.\"",2,7,22,29743283377532558990,"Local"},
+  
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6849586417221518`*^9, 3.6849588368913145`*^9, 
   3.684959309287334*^9, 3.6849964056005783`*^9, 3.684996448780048*^9, 
@@ -996,8 +1350,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-               GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                   "]]}}}, AspectRatio -> 1, Axes -> 
+               False, Background -> GrayLevel[0.93], Frame -> True, 
+               FrameStyle -> Directive[
                  GrayLevel[0.7], 
                  Thickness[Tiny]], FrameTicks -> None, 
                ImageSize -> {Automatic, 
@@ -1076,8 +1431,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-               GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                   "]]}}}, AspectRatio -> 1, Axes -> 
+               False, Background -> GrayLevel[0.93], Frame -> True, 
+               FrameStyle -> Directive[
                  GrayLevel[0.7], 
                  Thickness[Tiny]], FrameTicks -> None, 
                ImageSize -> {Automatic, 
@@ -1214,6 +1570,7 @@ Cell[BoxData[
              Derivative],
             MultilineFunction->None], "[", 
            RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ")"}]}]}], "\[Equal]", 
+      
       RowBox[{
        RowBox[{"NeumannValue", "[", 
         RowBox[{"0", ",", 
@@ -1271,8 +1628,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                    "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-                    GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
                     GrayLevel[0.7], 
                     Thickness[Tiny]], FrameTicks -> None, 
                     ImageSize -> {Automatic, 
@@ -1352,8 +1710,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                    "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-                    GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
                     GrayLevel[0.7], 
                     Thickness[Tiny]], FrameTicks -> None, 
                     ImageSize -> {Automatic, 
@@ -1415,6 +1774,7 @@ q5SZmRFAL++xNeOlE0Dwt3AR
             
             InterpretationFunction->(
              "InterpolatingFunction[{{0., 1.}, {0., 1.}, {0., 10.}}, <>]"& )],
+           
            False,
            Editable->False,
            SelectWithContents->True,
@@ -1477,8 +1837,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                    "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-                    GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
                     GrayLevel[0.7], 
                     Thickness[Tiny]], FrameTicks -> None, 
                     ImageSize -> {Automatic, 
@@ -1558,8 +1919,9 @@ q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
 vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
 shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
 q5SZmRFAL++xNeOlE0Dwt3AR
-                    "]]}}}, AspectRatio -> 1, Axes -> False, Background -> 
-                    GrayLevel[0.93], Frame -> True, FrameStyle -> Directive[
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
                     GrayLevel[0.7], 
                     Thickness[Tiny]], FrameTicks -> None, 
                     ImageSize -> {Automatic, 
@@ -1618,7 +1980,6 @@ q5SZmRFAL++xNeOlE0Dwt3AR
               StyleBox["]", "NonInterpretableSummary"]}]},
            "CopyTag",
            DisplayFunction->(#& ),
-           
            InterpretationFunction->(
             "InterpolatingFunction[{{0., 1.}, {0., 1.}, {0., 10.}}, <>]"& )],
           False,
@@ -1775,48 +2136,64 @@ Cell[746, 26, 191, 4, 30, "Input"],
 Cell[940, 32, 265, 9, 30, "Input"],
 Cell[CellGroupData[{
 Cell[1230, 45, 1909, 53, 126, "Input"],
-Cell[3142, 100, 442, 8, 21, "Message"],
-Cell[3587, 110, 9631, 198, 72, "Output"]
+Cell[3142, 100, 490, 9, 21, "Message"],
+Cell[3635, 111, 9668, 199, 79, "Output"]
 }, Open  ]],
-Cell[13233, 311, 491, 13, 30, "Input"],
-Cell[13727, 326, 116, 3, 30, "Input"],
-Cell[13846, 331, 159, 4, 30, "Input"],
-Cell[14008, 337, 436, 13, 30, "Input"],
-Cell[14447, 352, 85, 2, 30, "Input"],
-Cell[14535, 356, 252, 5, 30, "Input"],
-Cell[14790, 363, 147, 2, 30, "Input"],
-Cell[14940, 367, 240, 6, 30, "Input"],
-Cell[15183, 375, 294, 7, 30, "Input"],
+Cell[13318, 313, 548, 16, 30, "Input"],
+Cell[13869, 331, 116, 3, 30, "Input"],
+Cell[13988, 336, 159, 4, 30, "Input"],
+Cell[14150, 342, 436, 13, 30, "Input"],
+Cell[14589, 357, 85, 2, 30, "Input"],
+Cell[14677, 361, 252, 5, 30, "Input"],
+Cell[14932, 368, 147, 2, 30, "Input"],
+Cell[15082, 372, 240, 6, 30, "Input"],
+Cell[15325, 380, 294, 7, 30, "Input"],
 Cell[CellGroupData[{
-Cell[15502, 386, 10467, 260, 544, "Input"],
-Cell[25972, 648, 267, 4, 30, "Output"]
+Cell[15644, 391, 10520, 263, 544, "Input"],
+Cell[26167, 656, 369, 7, 21, "Message"],
+Cell[26539, 665, 368, 7, 21, "Message"],
+Cell[26910, 674, 1125, 18, 39, "Message"],
+Cell[28038, 694, 1125, 18, 39, "Message"],
+Cell[29166, 714, 1125, 18, 39, "Message"],
+Cell[30294, 734, 371, 7, 21, "Message"],
+Cell[30668, 743, 2954, 45, 65, "Message"],
+Cell[33625, 790, 2955, 45, 65, "Message"],
+Cell[36583, 837, 1608, 25, 90, "Message"],
+Cell[38194, 864, 1608, 25, 90, "Message"],
+Cell[39805, 891, 2955, 45, 65, "Message"],
+Cell[42763, 938, 369, 7, 21, "Message"],
+Cell[43135, 947, 1608, 25, 90, "Message"],
+Cell[44746, 974, 368, 7, 21, "Message"],
+Cell[45117, 983, 372, 7, 21, "Message"],
+Cell[45492, 992, 360, 7, 21, "Message"],
+Cell[45855, 1001, 311, 4, 30, "Output"]
 }, Open  ]],
-Cell[26254, 655, 9800, 253, 525, "Input"],
-Cell[36057, 910, 70, 1, 30, "Input"],
-Cell[36130, 913, 280, 4, 30, "Input"],
-Cell[36413, 919, 170, 2, 30, "Input"],
-Cell[36586, 923, 122, 2, 30, "Input"],
+Cell[46181, 1008, 9825, 253, 525, "Input"],
+Cell[56009, 1263, 70, 1, 30, "Input"],
+Cell[56082, 1266, 280, 4, 30, "Input"],
+Cell[56365, 1272, 170, 2, 30, "Input"],
+Cell[56538, 1276, 122, 2, 30, "Input"],
 Cell[CellGroupData[{
-Cell[36733, 929, 429, 6, 30, "Input"],
-Cell[37165, 937, 458, 8, 21, "Message"],
-Cell[37626, 947, 9538, 197, 72, "Output"]
+Cell[56685, 1282, 429, 6, 30, "Input"],
+Cell[57117, 1290, 461, 9, 21, "Message"],
+Cell[57581, 1301, 9570, 199, 79, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47201, 1149, 300, 4, 30, "Input"],
-Cell[47504, 1155, 349, 8, 21, "Message"],
-Cell[47856, 1165, 837, 15, 48, "Message"],
-Cell[48696, 1182, 22440, 464, 264, "Output"]
+Cell[67188, 1505, 300, 4, 30, "Input"],
+Cell[67491, 1511, 349, 8, 21, "Message"],
+Cell[67843, 1521, 837, 15, 48, "Message"],
+Cell[68683, 1538, 22531, 469, 310, "Output"]
 }, Open  ]],
-Cell[71151, 1649, 124, 2, 30, "Input"],
+Cell[91229, 2010, 124, 2, 30, "Input"],
 Cell[CellGroupData[{
-Cell[71300, 1655, 121, 2, 30, "Input"],
-Cell[71424, 1659, 75, 1, 30, "Output"]
+Cell[91378, 2016, 121, 2, 30, "Input"],
+Cell[91502, 2020, 75, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[71536, 1665, 953, 23, 50, "Input"],
-Cell[72492, 1690, 2009, 40, 330, "Output"],
-Cell[74504, 1732, 247, 6, 21, "Message"],
-Cell[74754, 1740, 739, 13, 48, "Message"]
+Cell[91614, 2026, 953, 23, 50, "Input"],
+Cell[92570, 2051, 2009, 40, 330, "Output"],
+Cell[94582, 2093, 247, 6, 21, "Message"],
+Cell[94832, 2101, 739, 13, 48, "Message"]
 }, Open  ]]
 }
 ]
