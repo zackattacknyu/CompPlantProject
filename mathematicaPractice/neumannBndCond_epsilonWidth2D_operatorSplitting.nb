@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     43351,       1104]
-NotebookOptionsPosition[     42477,       1073]
-NotebookOutlinePosition[     42822,       1088]
-CellTagsIndexPosition[     42779,       1085]
+NotebookDataLength[     45308,       1152]
+NotebookOptionsPosition[     44433,       1121]
+NotebookOutlinePosition[     44778,       1136]
+CellTagsIndexPosition[     44735,       1133]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -938,6 +938,54 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
+    "Iterate", " ", "the", " ", "rod", " ", "assuming", " ", "sheet", " ", 
+     RowBox[{"influence", ".", " ", "Make"}], " ", "neumann", " ", 
+     RowBox[{"b", ".", "c", ".", " ", "equals"}], " ", "for", " ", "this", 
+     " ", "to", " ", "happen"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rodValsWithSheet", " ", "=", " ", 
+     RowBox[{"NDSolveValue", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"D", "[", 
+            RowBox[{
+             RowBox[{"u", "[", 
+              RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "t"}], "]"}], 
+           "-", 
+           RowBox[{"alphaRod", "*", 
+            RowBox[{"Laplacian", "[", 
+             RowBox[{
+              RowBox[{"u", "[", 
+               RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "\[Equal]", 
+          RowBox[{"NeumannValue", "[", 
+           RowBox[{"0", ",", 
+            RowBox[{
+             RowBox[{"x", "\[Equal]", "0"}], "||", 
+             RowBox[{"x", "\[Equal]", "1"}], "||", 
+             RowBox[{"y", "\[Equal]", "0"}], "||", 
+             RowBox[{"y", "\[Equal]", "1"}]}]}], "]"}]}], ",", 
+         RowBox[{"DirichletCondition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
+            RowBox[{"initF", "[", 
+             RowBox[{"x", ",", "y"}], "]"}]}], ",", 
+           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", "maxT2"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
      RowBox[{
       RowBox[{"wholePlotNoSplit", "[", 
        RowBox[{"x_", ",", "y_", ",", "t_"}], "]"}], ":=", 
@@ -968,7 +1016,7 @@ Cell[BoxData[
      ";"}], "*)"}]}]}]], "Input",
  CellChangeTimes->{{3.6867781435777397`*^9, 3.686778196158105*^9}, {
   3.6867782307114935`*^9, 3.686778327509328*^9}, {3.6867783857051682`*^9, 
-  3.686778495599187*^9}}],
+  3.686778495599187*^9}, {3.6867785267319107`*^9, 3.6867785584776387`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1101,10 +1149,10 @@ Cell[15980, 374, 207, 4, 30, "Input"],
 Cell[16190, 380, 155, 3, 30, "Input"],
 Cell[16348, 385, 7325, 205, 354, "Input"],
 Cell[23676, 592, 241, 5, 30, "Input"],
-Cell[23920, 599, 14498, 371, 715, "Input"],
+Cell[23920, 599, 16454, 419, 791, "Input"],
 Cell[CellGroupData[{
-Cell[38443, 974, 1756, 48, 88, "Input"],
-Cell[40202, 1024, 2259, 46, 344, "Output"]
+Cell[40399, 1022, 1756, 48, 88, "Input"],
+Cell[42158, 1072, 2259, 46, 344, "Output"]
 }, Open  ]]
 }
 ]
