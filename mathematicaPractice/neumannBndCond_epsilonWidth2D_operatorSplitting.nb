@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     47493,       1211]
-NotebookOptionsPosition[     46540,       1178]
-NotebookOutlinePosition[     46885,       1193]
-CellTagsIndexPosition[     46842,       1190]
+NotebookDataLength[     51738,       1322]
+NotebookOptionsPosition[     50706,       1287]
+NotebookOutlinePosition[     51051,       1302]
+CellTagsIndexPosition[     51008,       1299]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -611,6 +611,20 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
+  RowBox[{"timeInd", "=", "1"}], ";"}]], "Input",
+ CellChangeTimes->{{3.686779838023178*^9, 3.6867798409301887`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"currentF", " ", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"initF", "[", 
+    RowBox[{"x", ",", "y"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6867794119228106`*^9, 3.6867794235604525`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
   RowBox[{"(*", 
    RowBox[{
    "Iterate", " ", "the", " ", "rod", " ", "for", " ", "one", " ", "time", 
@@ -645,8 +659,10 @@ Cell[BoxData[
           RowBox[{"NeumannValue", "[", 
            RowBox[{"0", ",", 
             RowBox[{
-             RowBox[{"x", "\[Equal]", "0"}], "||", 
-             RowBox[{"x", "\[Equal]", "1"}], "||", 
+             RowBox[{"x", "\[Equal]", 
+              RowBox[{"0.5", "-", "epsilon"}]}], "||", 
+             RowBox[{"x", "\[Equal]", 
+              RowBox[{"0.5", "+", "epsilon"}]}], "||", 
              RowBox[{"y", "\[Equal]", "0"}], "||", 
              RowBox[{"y", "\[Equal]", "1"}]}]}], "]"}]}], ",", 
          RowBox[{"DirichletCondition", "[", 
@@ -654,15 +670,25 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}]}]}], "]"}]}],
+         "}"}], ",", "u", ",", 
        RowBox[{"{", 
-        RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+        RowBox[{"x", ",", 
+         RowBox[{"0.5", "-", "epsilon"}], ",", 
+         RowBox[{"0.5", "+", "epsilon"}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
+        RowBox[{"t", ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}], ",", 
+         RowBox[{"timeInd", "*", "tau"}]}], "}"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
@@ -728,7 +754,7 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"vals3", "[", 
+            RowBox[{"rodVals", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ",", 
            RowBox[{"x", "\[Equal]", 
             RowBox[{"0.5", "-", "epsilon"}]}]}], "]"}], ",", 
@@ -737,16 +763,24 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}]}]}], "]"}]}],
+         "}"}], ",", "u", ",", 
        RowBox[{"{", 
         RowBox[{"x", ",", "0", ",", 
          RowBox[{"0.5", "-", "epsilon"}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
+        RowBox[{"t", ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}], ",", 
+         RowBox[{"timeInd", "*", "tau"}]}], "}"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
@@ -797,7 +831,7 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"vals3", "[", 
+            RowBox[{"rodVals", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ",", 
            RowBox[{"x", "\[Equal]", 
             RowBox[{"0.5", "+", "epsilon"}]}]}], "]"}], ",", 
@@ -806,17 +840,63 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}]}]}], "]"}]}],
+         "}"}], ",", "u", ",", 
        RowBox[{"{", 
         RowBox[{"x", ",", 
          RowBox[{"0.5", "+", "epsilon"}], ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+        RowBox[{"t", ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "-", "1"}], ")"}], "*", "tau"}], ",", 
+         RowBox[{"timeInd", "*", "tau"}]}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Starting", " ", "time", " ", "step", " ", "was", " ", "rod", " ", "then",
+      " ", "influencing", " ", "the", " ", 
+     RowBox[{"sheet", ".", " ", "Next"}], " ", "time", " ", "step", " ", "is",
+      " ", "sheet", " ", "and", " ", "then", " ", "it", " ", "influences", 
+     " ", "the", " ", "rod"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"curT", " ", "=", " ", "tau"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"currentF", "[", 
+      RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+     RowBox[{"Piecewise", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"sheetLeftValsWithRod", "[", 
+           RowBox[{"x", ",", "y", ",", "curT"}], "]"}], ",", 
+          RowBox[{"x", "<", 
+           RowBox[{"0.5", "-", "epsilon"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"rodVals", "[", 
+           RowBox[{"x", ",", "y", ",", "curT"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"x", "\[GreaterEqual]", " ", 
+            RowBox[{"0.5", "-", "epsilon"}]}], " ", "&&", " ", 
+           RowBox[{"x", " ", "\[LessEqual]", " ", 
+            RowBox[{"0.5", "+", "epsilon"}]}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"sheetRightValsWithRod", "[", 
+           RowBox[{"x", ",", "y", ",", "curT"}], "]"}], ",", 
+          RowBox[{"x", ">", 
+           RowBox[{"0.5", "+", "epsilon"}]}]}], "}"}]}], "}"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
     "Iterate", " ", "the", " ", "left", " ", "sheet", " ", "assuming", " ", 
@@ -861,7 +941,7 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"vals3", "[", 
+            RowBox[{"rodVals", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ",", 
            RowBox[{"x", "\[Equal]", 
             RowBox[{"0.5", "-", "epsilon"}]}]}], "]"}], ",", 
@@ -870,17 +950,23 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{"timeInd", "*", "tau"}]}]}], "]"}]}], "}"}], ",", "u", 
+       ",", 
        RowBox[{"{", 
         RowBox[{"x", ",", "0", ",", 
          RowBox[{"0.5", "-", "epsilon"}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+        RowBox[{"t", ",", 
+         RowBox[{"timeInd", "*", "tau"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "+", "1"}], ")"}], "*", "tau"}]}], "}"}]}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"sheetLeftDeriv", "[", 
@@ -939,7 +1025,7 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"vals3", "[", 
+            RowBox[{"rodVals", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}]}], ",", 
            RowBox[{"x", "\[Equal]", 
             RowBox[{"0.5", "+", "epsilon"}]}]}], "]"}], ",", 
@@ -948,17 +1034,23 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{"timeInd", "*", "tau"}]}]}], "]"}]}], "}"}], ",", "u", 
+       ",", 
        RowBox[{"{", 
         RowBox[{"x", ",", 
          RowBox[{"0.5", "+", "epsilon"}], ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+        RowBox[{"t", ",", 
+         RowBox[{"timeInd", "*", "tau"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "+", "1"}], ")"}], "*", "tau"}]}], "}"}]}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"sheetRightDeriv", "[", 
@@ -1027,16 +1119,24 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"u", "[", 
              RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
-            RowBox[{"initF", "[", 
+            RowBox[{"currentF", "[", 
              RowBox[{"x", ",", "y"}], "]"}]}], ",", 
-           RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+           RowBox[{"t", "\[Equal]", 
+            RowBox[{"timeInd", "*", "tau"}]}]}], "]"}]}], "}"}], ",", "u", 
+       ",", 
        RowBox[{"{", 
-        RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+        RowBox[{"x", ",", 
+         RowBox[{"0.5", "-", "epsilon"}], ",", 
+         RowBox[{"0.5", "+", "epsilon"}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"t", ",", "0", ",", "tau"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+        RowBox[{"t", ",", 
+         RowBox[{"timeInd", "*", "tau"}], ",", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"timeInd", "+", "1"}], ")"}], "*", "tau"}]}], "}"}]}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -1073,7 +1173,16 @@ Cell[BoxData[
    3.6867786393025885`*^9, 3.6867786766761417`*^9}, 3.6867787105684795`*^9, {
    3.6867787484100475`*^9, 3.6867787907828255`*^9}, {3.686778850580473*^9, 
    3.6867788770555944`*^9}, {3.6867789182183514`*^9, 3.686778923213175*^9}, {
-   3.6867790241277742`*^9, 3.686779153949888*^9}}],
+   3.6867790241277742`*^9, 3.686779153949888*^9}, {3.6867792448821344`*^9, 
+   3.686779250969762*^9}, {3.686779436845314*^9, 3.686779467095664*^9}, {
+   3.686779515649493*^9, 3.686779516690298*^9}, {3.686779547193615*^9, 
+   3.6867795490502253`*^9}, {3.6867796298953223`*^9, 
+   3.6867798015546417`*^9}, {3.6867798479728184`*^9, 
+   3.6867798580538635`*^9}, {3.6867799261634808`*^9, 
+   3.6867799814785833`*^9}, {3.6867800173768497`*^9, 
+   3.6867800337396793`*^9}, {3.6867800736771765`*^9, 3.686780080885393*^9}, {
+   3.68678012028267*^9, 3.6867801365271006`*^9}, {3.686780168320159*^9, 
+   3.6867802241676617`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1208,10 +1317,12 @@ Cell[16348, 385, 159, 3, 30, "Input"],
 Cell[16510, 390, 7325, 205, 354, "Input"],
 Cell[23838, 597, 241, 5, 30, "Input"],
 Cell[24082, 604, 219, 5, 30, "Input"],
-Cell[24304, 611, 18177, 464, 810, "Input"],
+Cell[24304, 611, 141, 3, 30, "Input"],
+Cell[24448, 616, 264, 7, 30, "Input"],
+Cell[24715, 625, 21932, 559, 1038, "Input"],
 Cell[CellGroupData[{
-Cell[42506, 1079, 1756, 48, 88, "Input"],
-Cell[44265, 1129, 2259, 46, 344, "Output"]
+Cell[46672, 1188, 1756, 48, 88, "Input"],
+Cell[48431, 1238, 2259, 46, 344, "Output"]
 }, Open  ]]
 }
 ]
