@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     73024,       1804]
-NotebookOptionsPosition[     69932,       1705]
-NotebookOutlinePosition[     70492,       1727]
-CellTagsIndexPosition[     70449,       1724]
+NotebookDataLength[     62297,       1569]
+NotebookOptionsPosition[     59407,       1476]
+NotebookOutlinePosition[     59967,       1498]
+CellTagsIndexPosition[     59924,       1495]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -133,8 +133,6 @@ Cell[BoxData[
   FontWeight->"Bold"]], "Input",
  CellChangeTimes->{{3.686882072659137*^9, 3.6868820852302227`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"(*", 
   RowBox[{
@@ -203,216 +201,6 @@ Cell[BoxData[
    3.6868821586377397`*^9}, {3.6873906801954527`*^9, 3.687390691184081*^9}, {
    3.6874712175917597`*^9, 3.6874712197887917`*^9}, {3.6874749646109004`*^9, 
    3.687474967601924*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","femcscd",
-   "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,11,1,28759588210975698548,
-   "Kernal1"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6874712769558797`*^9, 3.6874729055954313`*^9}],
-
-Cell[BoxData[
- TagBox[
-  TemplateBox[{RowBox[{
-      StyleBox[
-       TagBox["InterpolatingFunction", "SummaryHead"], 
-       "NonInterpretableSummary"], 
-      StyleBox["[", "NonInterpretableSummary"], 
-      DynamicModuleBox[{Typeset`open$$ = False}, 
-       PanelBox[
-        PaneSelectorBox[{False -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquarePlusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = True), Appearance -> None,
-                 Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 
-                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])}]], 
-              GraphicsBox[{{
-                 GrayLevel[0.6], 
-                 AbsolutePointSize[5], 
-                 PointBox[{1, 1}], 
-                 PointBox[{2, 4}], 
-                 PointBox[{3, 2}], 
-                 PointBox[{4, 3}]}, {{}, {}, {
-                  AbsoluteThickness[1], 
-                  Opacity[1.], 
-                  LineBox[CompressedData["
-1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
-3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
-cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
-QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
-wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
-ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
-/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
-klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
-42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
-IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
-7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
-QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
-CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
-7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
-/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
-q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
-vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
-shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
-q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> 
-               False, Background -> GrayLevel[0.93], Frame -> True, 
-               FrameStyle -> Directive[
-                 GrayLevel[0.7], 
-                 Thickness[Tiny]], FrameTicks -> None, 
-               ImageSize -> {Automatic, 
-                 Dynamic[
-                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "1.`"}], "}"}], ",", 
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "1.`"}], "}"}], ",", 
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "10.`"}], "}"}]}], "}"}], 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox["\"Output: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"scalar\"", "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}], True -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquareMinusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                None, Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 
-                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])}]], 
-              GraphicsBox[{{
-                 GrayLevel[0.6], 
-                 AbsolutePointSize[5], 
-                 PointBox[{1, 1}], 
-                 PointBox[{2, 4}], 
-                 PointBox[{3, 2}], 
-                 PointBox[{4, 3}]}, {{}, {}, {
-                  AbsoluteThickness[1], 
-                  Opacity[1.], 
-                  LineBox[CompressedData["
-1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
-3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
-cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
-QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
-wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
-ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
-/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
-klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
-42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
-IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
-7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
-QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
-CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
-7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
-/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
-q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
-vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
-shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
-q5SZmRFAL++xNeOlE0Dwt3AR
-                   "]]}}}, AspectRatio -> 1, Axes -> 
-               False, Background -> GrayLevel[0.93], Frame -> True, 
-               FrameStyle -> Directive[
-                 GrayLevel[0.7], 
-                 Thickness[Tiny]], FrameTicks -> None, 
-               ImageSize -> {Automatic, 
-                 Dynamic[
-                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                   Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "1.`"}], "}"}], ",", 
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "1.`"}], "}"}], ",", 
-                    RowBox[{"{", 
-                    RowBox[{"0.`", ",", "10.`"}], "}"}]}], "}"}], 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox["\"Output: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"scalar\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox["\"Order: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"2", ",", "2", ",", "2"}], "}"}], 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox["\"Method: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"Unstructured\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox["\"Periodic: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["False", "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}]}, 
-         Dynamic[Typeset`open$$], ImageSize -> Automatic], BaselinePosition -> 
-        Baseline], DynamicModuleValues :> {}], 
-      StyleBox["]", "NonInterpretableSummary"]}]},
-   "CopyTag",
-   DisplayFunction->(#& ),
-   InterpretationFunction->(
-    "InterpolatingFunction[{{0., 1.}, {0., 1.}, {0., 10.}}, <>]"& )],
-  False,
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{3.6874712906191945`*^9, 3.6874729191483655`*^9}]
-}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.686952556514821*^9, 3.686952566646888*^9}, 
@@ -698,61 +486,25 @@ during this calculation.\"",2,15,5,28758975201545693199,"Kernal1"},
   3.687390641031213*^9, 3.6873906719739823`*^9}, {3.6874712091096344`*^9, 
   3.6874712132616987`*^9}, {3.6874749398507347`*^9, 3.6874749463507795`*^9}}],
 
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","femcscd",
-   "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,16,2,28759588210975698548,
-   "Kernal1"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.687471291359208*^9, 3.687472919899387*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","femcscd",
-   "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,16,3,28759588210975698548,
-   "Kernal1"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.687471291359208*^9, 3.687472931915349*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "NDSolveValue","femcscd",
-   "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,16,4,28759588210975698548,
-   "Kernal1"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.687471291359208*^9, 3.6874729712257366`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","stop",
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
-\\\"::\\\", \\\"femcscd\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,16,5,28759588210975698548,"Kernal1"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.687471291359208*^9, 3.6874729716527605`*^9}],
+Cell[BoxData["\<\"The PDE is convection dominated and the result may not be \
+stable. Adding artificial diffusion may help.\"\>"], "Output",
+ CellChangeTimes->{3.6873912551599455`*^9, 3.687413353503048*^9, 
+  3.68747161736863*^9, 3.6874732451697407`*^9, 3.6874749834040318`*^9}],
 
 Cell[BoxData["\<\"The PDE is convection dominated and the result may not be \
 stable. Adding artificial diffusion may help.\"\>"], "Output",
  CellChangeTimes->{3.6873912551599455`*^9, 3.687413353503048*^9, 
-  3.68747161736863*^9, 3.6874732451697407`*^9}],
+  3.68747161736863*^9, 3.6874732451697407`*^9, 3.6874749834040318`*^9}],
 
 Cell[BoxData["\<\"The PDE is convection dominated and the result may not be \
 stable. Adding artificial diffusion may help.\"\>"], "Output",
  CellChangeTimes->{3.6873912551599455`*^9, 3.687413353503048*^9, 
-  3.68747161736863*^9, 3.6874732451697407`*^9}],
-
-Cell[BoxData["\<\"The PDE is convection dominated and the result may not be \
-stable. Adding artificial diffusion may help.\"\>"], "Output",
- CellChangeTimes->{3.6873912551599455`*^9, 3.687413353503048*^9, 
-  3.68747161736863*^9, 3.687473245179741*^9}],
+  3.68747161736863*^9, 3.6874732451697407`*^9, 3.6874749834040318`*^9}],
 
 Cell[BoxData["\<\"Further output of `1` will be suppressed during this \
 calculation.\"\>"], "Output",
  CellChangeTimes->{3.6873912551599455`*^9, 3.687413353503048*^9, 
-  3.68747161736863*^9, 3.687473245179741*^9}]
+  3.68747161736863*^9, 3.6874732451697407`*^9, 3.6874749834040318`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -827,7 +579,7 @@ Cell[BoxData[
  CellChangeTimes->{3.6872382514090366`*^9, 3.687238785803773*^9, 
   3.687289836970233*^9, 3.687369379537115*^9, 3.6873743657894964`*^9, 
   3.687379599843693*^9, 3.687391255202948*^9, 3.687413353543048*^9, 
-  3.6874716174496346`*^9, 3.687473245491741*^9}]
+  3.6874716174496346`*^9, 3.687473245491741*^9, 3.6874749834440327`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -847,7 +599,7 @@ Cell[BoxData[
  CellChangeTimes->{3.687238296875277*^9, 3.687238785812773*^9, 
   3.687289836994748*^9, 3.6873693795451155`*^9, 3.6873743657994967`*^9, 
   3.6873795998596935`*^9, 3.6873912552089486`*^9, 3.6874133535530477`*^9, 
-  3.687471617469636*^9, 3.6874732455017414`*^9}]
+  3.687471617469636*^9, 3.6874732455017414`*^9, 3.6874749834540324`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -878,7 +630,8 @@ Cell[BoxData[
  CellChangeTimes->{3.6872382609640913`*^9, 3.6872383525655966`*^9, 
   3.6872387858217735`*^9, 3.6872898370182643`*^9, 3.6873693795551157`*^9, 
   3.6873743657994967`*^9, 3.687379599867694*^9, 3.687391255215949*^9, 
-  3.6874133535530477`*^9, 3.687471617484637*^9, 3.6874732455017414`*^9}]
+  3.6874133535530477`*^9, 3.687471617484637*^9, 3.6874732455017414`*^9, 
+  3.6874749834540324`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -901,7 +654,8 @@ Cell[BoxData[
  CellChangeTimes->{3.6872383106553545`*^9, 3.687238357475623*^9, 
   3.687238785870776*^9, 3.6872898370417795`*^9, 3.687369379563116*^9, 
   3.6873743658094964`*^9, 3.687379599874695*^9, 3.687391255221949*^9, 
-  3.6874133535630474`*^9, 3.6874716175016375`*^9, 3.687473245511741*^9}]
+  3.6874133535630474`*^9, 3.6874716175016375`*^9, 3.687473245511741*^9, 
+  3.687474983464032*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -928,7 +682,8 @@ Cell[BoxData[
  CellChangeTimes->{3.6872383159253855`*^9, 3.68723836041564*^9, 
   3.687238785896778*^9, 3.6872898370647945`*^9, 3.687369379572117*^9, 
   3.687374365819496*^9, 3.687379599881695*^9, 3.6873912552279496`*^9, 
-  3.6874133535730476`*^9, 3.687471617519639*^9, 3.687473245521741*^9}]
+  3.6874133535730476`*^9, 3.687471617519639*^9, 3.687473245521741*^9, 
+  3.6874749834740324`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -947,7 +702,8 @@ Cell[BoxData[
   3.6872383367355037`*^9, {3.687238368395682*^9, 3.6872383831767626`*^9}, 
    3.6872387859457808`*^9, 3.687289837088311*^9, 3.687369379580117*^9, 
    3.687374365819496*^9, 3.6873795998906956`*^9, 3.6873912552339497`*^9, 
-   3.6874133535730476`*^9, 3.6874716175346394`*^9, 3.687473245521741*^9}]
+   3.6874133535730476`*^9, 3.6874716175346394`*^9, 3.687473245521741*^9, 
+   3.6874749834740324`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -1618,53 +1374,68 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,38,6,28759588210975698548,
+Adding artificial diffusion may help.\"",2,35,1,28759601673557729927,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
   3.686877379369416*^9, 3.6869527920991564`*^9, 3.686955290614806*^9, 
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
-  3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9}],
+  3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
+  3.6874749835840325`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,38,7,28759588210975698548,
+Adding artificial diffusion may help.\"",2,35,2,28759601673557729927,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
   3.686877379369416*^9, 3.6869527920991564`*^9, 3.686955290614806*^9, 
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
-  3.687413353774048*^9, 3.687471617611644*^9, 3.6874742279973984`*^9}],
+  3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
+  3.687475962241011*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,38,8,28759588210975698548,
+Adding artificial diffusion may help.\"",2,35,3,28759601673557729927,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
   3.686877379369416*^9, 3.6869527920991564`*^9, 3.686955290614806*^9, 
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
-  3.687413353774048*^9, 3.687471617611644*^9, 3.6874742655876074`*^9}],
+  3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
+  3.687476001564566*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
 \\\"::\\\", \\\"femcscd\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,38,9,28759588210975698548,"Kernal1"},
+during this calculation.\"",2,35,4,28759601673557729927,"Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
   3.686877379369416*^9, 3.6869527920991564`*^9, 3.686955290614806*^9, 
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
-  3.687413353774048*^9, 3.687471617611644*^9, 3.687474265607607*^9}]
+  3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
+  3.6874760016185665`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["epsilon=", 0.001, "time=", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.6874870716952686`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1736,76 +1507,70 @@ Cell[3742, 110, 82, 2, 30, "Input"],
 Cell[3827, 114, 155, 3, 30, "Input"],
 Cell[3985, 119, 159, 3, 30, "Input"],
 Cell[4147, 124, 291, 9, 34, "Input"],
+Cell[4441, 135, 2674, 67, 88, "Input"],
+Cell[7118, 204, 118, 2, 30, "Input"],
+Cell[7239, 208, 290, 7, 30, "Input"],
 Cell[CellGroupData[{
-Cell[4463, 137, 2674, 67, 88, "Input"],
-Cell[7140, 206, 324, 7, 21, "Message"],
-Cell[7467, 215, 9545, 198, 79, "Output"]
+Cell[7554, 219, 11075, 267, 449, "Input"],
+Cell[18632, 488, 278, 3, 30, "Output"],
+Cell[18913, 493, 278, 3, 30, "Output"],
+Cell[19194, 498, 278, 3, 30, "Output"],
+Cell[19475, 503, 240, 3, 30, "Output"]
 }, Open  ]],
-Cell[17027, 416, 118, 2, 30, "Input"],
-Cell[17148, 420, 290, 7, 30, "Input"],
+Cell[19730, 509, 162, 2, 30, "Input"],
+Cell[19895, 513, 321, 9, 34, "Input"],
+Cell[20219, 524, 219, 5, 30, "Input"],
+Cell[20441, 531, 141, 3, 30, "Input"],
+Cell[20585, 536, 374, 6, 30, "Input"],
+Cell[20962, 544, 264, 7, 30, "Input"],
+Cell[21229, 553, 373, 10, 30, "Input"],
 Cell[CellGroupData[{
-Cell[17463, 431, 11075, 267, 449, "Input"],
-Cell[28541, 700, 320, 7, 21, "Message"],
-Cell[28864, 709, 320, 7, 21, "Message"],
-Cell[29187, 718, 322, 7, 21, "Message"],
-Cell[29512, 727, 373, 7, 21, "Message"],
-Cell[29888, 736, 254, 3, 30, "Output"],
-Cell[30145, 741, 254, 3, 30, "Output"],
-Cell[30402, 746, 252, 3, 30, "Output"],
-Cell[30657, 751, 214, 3, 30, "Output"]
-}, Open  ]],
-Cell[30886, 757, 162, 2, 30, "Input"],
-Cell[31051, 761, 321, 9, 34, "Input"],
-Cell[31375, 772, 219, 5, 30, "Input"],
-Cell[31597, 779, 141, 3, 30, "Input"],
-Cell[31741, 784, 374, 6, 30, "Input"],
-Cell[32118, 792, 264, 7, 30, "Input"],
-Cell[32385, 801, 373, 10, 30, "Input"],
-Cell[CellGroupData[{
-Cell[32783, 815, 251, 6, 30, "Input"],
-Cell[33037, 823, 348, 6, 30, "Output"]
+Cell[21627, 567, 251, 6, 30, "Input"],
+Cell[21881, 575, 372, 6, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33422, 834, 278, 7, 30, "Input"],
-Cell[33703, 843, 358, 6, 30, "Output"]
+Cell[22290, 586, 278, 7, 30, "Input"],
+Cell[22571, 595, 382, 6, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34098, 854, 335, 8, 30, "Input"],
-Cell[34436, 864, 658, 16, 30, "Output"]
+Cell[22990, 606, 335, 8, 30, "Input"],
+Cell[23328, 616, 685, 17, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35131, 885, 220, 5, 30, "Input"],
-Cell[35354, 892, 498, 11, 30, "Output"]
+Cell[24050, 638, 220, 5, 30, "Input"],
+Cell[24273, 645, 523, 12, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35889, 908, 101, 1, 30, "Input"],
-Cell[35993, 911, 753, 19, 30, "Output"]
+Cell[24833, 662, 101, 1, 30, "Input"],
+Cell[24937, 665, 780, 20, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36783, 935, 228, 5, 30, "Input"],
-Cell[37014, 942, 412, 7, 30, "Output"]
+Cell[25754, 690, 228, 5, 30, "Input"],
+Cell[25985, 697, 440, 8, 30, "Output"]
 }, Open  ]],
-Cell[37441, 952, 96, 1, 30, "Input"],
-Cell[37540, 955, 233, 6, 30, "Input"],
-Cell[37776, 963, 142, 3, 30, "Input"],
-Cell[37921, 968, 70, 1, 30, "Input"],
+Cell[26440, 708, 96, 1, 30, "Input"],
+Cell[26539, 711, 233, 6, 30, "Input"],
+Cell[26775, 719, 142, 3, 30, "Input"],
+Cell[26920, 724, 70, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[38016, 973, 28215, 641, 1057, "Input"],
-Cell[66234, 1616, 610, 11, 21, "Message"],
-Cell[66847, 1629, 610, 11, 21, "Message"],
-Cell[67460, 1642, 610, 11, 21, "Message"],
-Cell[68073, 1655, 659, 11, 21, "Message"]
+Cell[27015, 729, 28215, 641, 1057, "Input"],
+Cell[55233, 1372, 637, 12, 21, "Message"],
+Cell[55873, 1386, 635, 12, 21, "Message"],
+Cell[56511, 1400, 635, 12, 21, "Message"],
+Cell[57149, 1414, 688, 12, 21, "Message"],
+Cell[57840, 1428, 285, 6, 22, "Print"],
+Cell[58128, 1436, 79, 1, 30, "Output"]
 }, Open  ]],
-Cell[68747, 1669, 165, 3, 30, "Input"],
+Cell[58222, 1440, 165, 3, 30, "Input"],
 Cell[CellGroupData[{
-Cell[68937, 1676, 133, 2, 30, "Input"],
-Cell[69073, 1680, 120, 2, 30, "Output"]
+Cell[58412, 1447, 133, 2, 30, "Input"],
+Cell[58548, 1451, 120, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69230, 1687, 225, 5, 30, "Input"],
-Cell[69458, 1694, 137, 2, 30, "Output"]
+Cell[58705, 1458, 225, 5, 30, "Input"],
+Cell[58933, 1465, 137, 2, 30, "Output"]
 }, Open  ]],
-Cell[69610, 1699, 318, 4, 30, "Input"]
+Cell[59085, 1470, 318, 4, 30, "Input"]
 }
 ]
 *)
