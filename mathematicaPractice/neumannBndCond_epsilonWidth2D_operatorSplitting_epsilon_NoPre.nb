@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     39123,        937]
-NotebookOptionsPosition[     37737,        892]
-NotebookOutlinePosition[     38297,        914]
-CellTagsIndexPosition[     38254,        911]
+NotebookDataLength[     46027,       1114]
+NotebookOptionsPosition[     43860,       1048]
+NotebookOutlinePosition[     44420,       1070]
+CellTagsIndexPosition[     44377,       1067]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -826,7 +826,7 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,35,1,28759601673557729927,
+Adding artificial diffusion may help.\"",2,86,7,28759698240513704611,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
@@ -834,13 +834,13 @@ Adding artificial diffusion may help.\"",2,35,1,28759601673557729927,
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
   3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
-  3.6874749835840325`*^9}],
+  3.6874749835840325`*^9, 3.6874913284797077`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,35,2,28759601673557729927,
+Adding artificial diffusion may help.\"",2,86,8,28759698240513704611,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
@@ -848,13 +848,13 @@ Adding artificial diffusion may help.\"",2,35,2,28759601673557729927,
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
   3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
-  3.687475962241011*^9}],
+  3.6874749835840325`*^9, 3.687492301188895*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,35,3,28759601673557729927,
+Adding artificial diffusion may help.\"",2,86,9,28759698240513704611,
    "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
@@ -862,21 +862,23 @@ Adding artificial diffusion may help.\"",2,35,3,28759601673557729927,
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
   3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
-  3.687476001564566*^9}],
+  3.6874749835840325`*^9, 3.687492340313764*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "General","stop",
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NDSolveValue\\\", \
 \\\"::\\\", \\\"femcscd\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"",2,35,4,28759601673557729927,"Kernal1"},
+during this calculation.\"",2,86,10,28759698240513704611,"Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6868741709779377`*^9, 3.686876789996484*^9, 
   3.686877379369416*^9, 3.6869527920991564`*^9, 3.686955290614806*^9, 
   3.6872387860547867`*^9, 3.687289837328971*^9, 3.6873693796491213`*^9, 
   3.6873743666314974`*^9, 3.687379599982701*^9, 3.6873912553469563`*^9, 
   3.687413353774048*^9, 3.687471617611644*^9, 3.6874732456017413`*^9, 
-  3.6874760016185665`*^9}],
+  3.6874749835840325`*^9, 3.687492340344964*^9}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
@@ -884,10 +886,164 @@ Cell[BoxData[
    "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "1"}],
   SequenceForm["epsilon=", 0.001, "time=", 1],
   Editable->False]], "Print",
- CellChangeTimes->{3.6874811337163153`*^9}],
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687497499220651*^9}],
 
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.6874870716952686`*^9}]
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["epsilon=", 0.001, "time=", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875037018608775`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "3"}],
+  SequenceForm["epsilon=", 0.001, "time=", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687509892778576*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "4"}],
+  SequenceForm["epsilon=", 0.001, "time=", 4],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875160191029778`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "5"}],
+  SequenceForm["epsilon=", 0.001, "time=", 5],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875221408289027`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "6"}],
+  SequenceForm["epsilon=", 0.001, "time=", 6],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875283966884475`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "7"}],
+  SequenceForm["epsilon=", 0.001, "time=", 7],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687534572222446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "8"}],
+  SequenceForm["epsilon=", 0.001, "time=", 8],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875407451933303`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "9"}],
+  SequenceForm["epsilon=", 0.001, "time=", 9],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875469752149982`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "10"}],
+  SequenceForm["epsilon=", 0.001, "time=", 10],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875531678095646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "11"}],
+  SequenceForm["epsilon=", 0.001, "time=", 11],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687559415372171*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "12"}],
+  SequenceForm["epsilon=", 0.001, "time=", 12],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875656432928133`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "13"}],
+  SequenceForm["epsilon=", 0.001, "time=", 13],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687571859389798*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "14"}],
+  SequenceForm["epsilon=", 0.001, "time=", 14],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687578225133233*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "15"}],
+  SequenceForm["epsilon=", 0.001, "time=", 15],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875844295470533`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "16"}],
+  SequenceForm["epsilon=", 0.001, "time=", 16],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687590689241327*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "17"}],
+  SequenceForm["epsilon=", 0.001, "time=", 17],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.6875969003117857`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "18"}],
+  SequenceForm["epsilon=", 0.001, "time=", 18],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687603167934944*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "19"}],
+  SequenceForm["epsilon=", 0.001, "time=", 19],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687609400316556*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"epsilon=\"\>", "\[InvisibleSpace]", "0.001`", 
+   "\[InvisibleSpace]", "\<\"time=\"\>", "\[InvisibleSpace]", "20"}],
+  SequenceForm["epsilon=", 0.001, "time=", 20],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6874811337163153`*^9, 3.687615606239711*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", "Null", "}"}]], "Output",
+ CellChangeTimes->{3.6874870716952686`*^9, 3.687615606303111*^9}]
 }, Open  ]]
 },
 Evaluator->"Kernal1",
@@ -932,12 +1088,33 @@ Cell[5380, 162, 373, 10, 30, "Input"],
 Cell[5756, 174, 1630, 30, 107, "Input"],
 Cell[CellGroupData[{
 Cell[7411, 208, 27333, 614, 1038, "Input"],
-Cell[34747, 824, 637, 12, 21, "Message"],
-Cell[35387, 838, 635, 12, 21, "Message"],
-Cell[36025, 852, 635, 12, 21, "Message"],
-Cell[36663, 866, 688, 12, 21, "Message"],
-Cell[37354, 880, 285, 6, 22, "Print"],
-Cell[37642, 888, 79, 1, 30, "Output"]
+Cell[34747, 824, 661, 12, 21, "Message"],
+Cell[35411, 838, 659, 12, 21, "Message"],
+Cell[36073, 852, 659, 12, 21, "Message"],
+Cell[36735, 866, 711, 12, 21, "Message"],
+Cell[CellGroupData[{
+Cell[37471, 882, 307, 6, 22, "Print"],
+Cell[37781, 890, 309, 6, 22, "Print"],
+Cell[38093, 898, 307, 6, 22, "Print"],
+Cell[38403, 906, 309, 6, 22, "Print"],
+Cell[38715, 914, 309, 6, 22, "Print"],
+Cell[39027, 922, 309, 6, 22, "Print"],
+Cell[39339, 930, 307, 6, 22, "Print"],
+Cell[39649, 938, 309, 6, 22, "Print"],
+Cell[39961, 946, 309, 6, 22, "Print"],
+Cell[40273, 954, 311, 6, 22, "Print"],
+Cell[40587, 962, 309, 6, 22, "Print"],
+Cell[40899, 970, 311, 6, 22, "Print"],
+Cell[41213, 978, 309, 6, 22, "Print"],
+Cell[41525, 986, 309, 6, 22, "Print"],
+Cell[41837, 994, 311, 6, 22, "Print"],
+Cell[42151, 1002, 309, 6, 22, "Print"],
+Cell[42463, 1010, 311, 6, 22, "Print"],
+Cell[42777, 1018, 309, 6, 22, "Print"],
+Cell[43089, 1026, 309, 6, 22, "Print"],
+Cell[43401, 1034, 309, 6, 22, "Print"]
+}, Open  ]],
+Cell[43725, 1043, 119, 2, 63, "Output"]
 }, Open  ]]
 }
 ]
