@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30466,        719]
-NotebookOptionsPosition[     29608,        686]
-NotebookOutlinePosition[     29951,        701]
-CellTagsIndexPosition[     29908,        698]
+NotebookDataLength[     30606,        719]
+NotebookOptionsPosition[     29746,        686]
+NotebookOutlinePosition[     30091,        701]
+CellTagsIndexPosition[     30048,        698]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -73,10 +73,10 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,7,3,28767629158878553592,"Kernal1"},
+Adding artificial diffusion may help.\"",2,14,3,29759182961255320787,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6886991704222994`*^9, 3.6886995087296495`*^9, 
-  3.6886998248737316`*^9, 3.688700082394461*^9}],
+  3.6886998248737316`*^9, 3.688700082394461*^9, 3.6888509417165947`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -273,7 +273,7 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.6886991704643016`*^9, 3.6886995090106654`*^9, 
-  3.6886998251627483`*^9, 3.6887000959722376`*^9}]
+  3.6886998251627483`*^9, 3.6887000959722376`*^9, 3.6888509831236176`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -299,17 +299,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.2, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {550., {117., 123.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {360., {137., 144.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$8534$$ = 0}, 
+    True, $CellContext`t$25858$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$8534$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$25858$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -319,7 +319,7 @@ Cell[BoxData[
           0.08, 0}, {$CellContext`x, 0, 1}, {$CellContext`y, 0, 1}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{601., {166., 173.}},
+     ImageSizeCache->{411., {184., 191.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -330,7 +330,8 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.6887001231497917`*^9, 3.688700153765543*^9}}]
+ CellChangeTimes->{{3.6887001231497917`*^9, 3.688700153765543*^9}, 
+   3.6888509832354417`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -415,10 +416,9 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,15,4,28767629158878553592,
-   "Kernal1"},
+Adding artificial diffusion may help.\"",2,18,4,29759182961255320787,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6887011340416117`*^9}],
+ CellChangeTimes->{3.6887011340416117`*^9, 3.688850983599171*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -614,7 +614,7 @@ q5SZmRFAL++xNeOlE0Dwt3AR
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.6887011473743744`*^9}]
+ CellChangeTimes->{3.6887011473743744`*^9, 3.6888510194711056`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -645,17 +645,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.5, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0.16, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {618., {101., 107.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {443., {91., 98.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$17114$$ = 0}, 
+    True, $CellContext`t$26007$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$17114$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$26007$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -667,7 +667,7 @@ $CellContext`t$$],
           0.08, 0}, {$CellContext`x, 0, 1}, {$CellContext`y, 0, 1}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{669., {150., 157.}},
+     ImageSizeCache->{494., {138., 145.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -681,11 +681,11 @@ $CellContext`t$$],
  CellChangeTimes->{
   3.6886983263860235`*^9, {3.6886985561291637`*^9, 3.688698633275576*^9}, 
    3.6886992397792664`*^9, 3.6886995094486904`*^9, 3.6886998254827666`*^9, 
-   3.688701167995554*^9}]
+   3.688701167995554*^9, 3.6888510196076956`*^9}]
 }, Open  ]]
 },
-WindowSize->{751, 821},
-WindowMargins->{{454, Automatic}, {Automatic, 55}},
+WindowSize->{751, 709},
+WindowMargins->{{-969, Automatic}, {Automatic, 352}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -703,23 +703,23 @@ Notebook[{
 Cell[558, 20, 155, 3, 30, "Input"],
 Cell[CellGroupData[{
 Cell[738, 27, 1515, 42, 69, "Input"],
-Cell[2256, 71, 368, 7, 21, "Message"],
-Cell[2627, 80, 9520, 195, 79, "Output"]
+Cell[2256, 71, 391, 7, 21, "Message"],
+Cell[2650, 80, 9544, 195, 72, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12184, 280, 556, 16, 30, "Input"],
-Cell[12743, 298, 1710, 34, 356, "Output"]
+Cell[12231, 280, 556, 16, 30, "Input"],
+Cell[12790, 298, 1738, 35, 392, "Output"]
 }, Open  ]],
-Cell[14468, 335, 202, 4, 30, "Input"],
-Cell[14673, 341, 900, 24, 69, "Input"],
+Cell[14543, 336, 202, 4, 30, "Input"],
+Cell[14748, 342, 900, 24, 69, "Input"],
 Cell[CellGroupData[{
-Cell[15598, 369, 1499, 42, 88, "Input"],
-Cell[17100, 413, 300, 7, 21, "Message"],
-Cell[17403, 422, 9445, 194, 79, "Output"]
+Cell[15673, 370, 1499, 42, 88, "Input"],
+Cell[17175, 414, 316, 6, 21, "Message"],
+Cell[17494, 422, 9469, 194, 72, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26885, 621, 780, 21, 50, "Input"],
-Cell[27668, 644, 1924, 39, 357, "Output"]
+Cell[27000, 621, 780, 21, 50, "Input"],
+Cell[27783, 644, 1947, 39, 333, "Output"]
 }, Open  ]]
 }
 ]
