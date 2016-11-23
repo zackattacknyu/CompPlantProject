@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17269,        470]
-NotebookOptionsPosition[     16400,        437]
-NotebookOutlinePosition[     16747,        452]
-CellTagsIndexPosition[     16704,        449]
+NotebookDataLength[     17467,        478]
+NotebookOptionsPosition[     16563,        444]
+NotebookOutlinePosition[     16907,        459]
+CellTagsIndexPosition[     16864,        456]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -76,6 +76,7 @@ Cell[BoxData[{
           RowBox[{
            RowBox[{"u", "[", 
             RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "t"}], "]"}], "-", 
+         
          RowBox[{
           RowBox[{"diffConst", "[", "x", "]"}], "*", 
           RowBox[{"Laplacian", "[", 
@@ -112,6 +113,7 @@ Cell[BoxData[{
           RowBox[{
            RowBox[{"u", "[", 
             RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "t"}], "]"}], "-", 
+         
          RowBox[{"alphaSheet", "*", 
           RowBox[{"Laplacian", "[", 
            RowBox[{
@@ -141,21 +143,26 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,6,1,29759191868016527576,"Local"},
+Adding artificial diffusion may help.\"",2,42,50,28768256803829676367,
+   "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6888497077431326`*^9, 3.6888506077578506`*^9, 
   3.688851478624632*^9, 3.6888517457541246`*^9, 3.6888517785054054`*^9, 
-  3.68885199089001*^9}],
+  3.68885199089001*^9, 3.6888539349393234`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.688853942941781*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,7,2,29759191868016527576,"Local"},
+Adding artificial diffusion may help.\"",2,43,51,28768256803829676367,
+   "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.6888497077431326`*^9, 3.6888506077578506`*^9, 
   3.688851478624632*^9, 3.6888517457541246`*^9, 3.6888517785054054`*^9, 
-  3.688852025704318*^9}]
+  3.68885199089001*^9, 3.6888539429737825`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -214,7 +221,7 @@ $CellContext`t$$], 0, 0.08}, {$CellContext`x, 0, 1}, {$CellContext`y, 0, 1},
          "System without Rod", "System with Rod", "Zero", "Const"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{566., {184., 191.}},
+     ImageSizeCache->{566., {187., 194.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -387,7 +394,7 @@ Cell[BoxData[
          1, -1}, {$CellContext`x, 0.3, 0.7}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {150., 157.}},
+     ImageSizeCache->{411., {153., 160.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -435,8 +442,8 @@ during this calculation.\"",2,27,14,29759182961255320787,"Local"},
  CellChangeTimes->{3.6888515794043236`*^9}]
 }, Open  ]]
 },
-WindowSize->{1080, 1837},
-WindowMargins->{{-1088, Automatic}, {Automatic, -8}},
+WindowSize->{1519, 1002},
+WindowMargins->{{56, Automatic}, {Automatic, 16}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -452,25 +459,26 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4080, 115, 221, "Input"],
-Cell[4663, 139, 414, 8, 21, "Message"],
-Cell[5080, 149, 415, 8, 21, "Message"]
+Cell[580, 22, 4100, 117, 145, "Input"],
+Cell[4683, 141, 446, 9, 21, "Message"],
+Cell[5132, 152, 77, 1, 30, "Output"],
+Cell[5212, 155, 446, 9, 21, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5532, 162, 974, 25, 50, "Input"],
-Cell[6509, 189, 1937, 39, 392, "Output"]
+Cell[5695, 169, 974, 25, 50, "Input"],
+Cell[6672, 196, 1937, 39, 398, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8483, 233, 1996, 49, 126, "Input"],
-Cell[10482, 284, 128, 2, 30, "Output"]
+Cell[8646, 240, 1996, 49, 126, "Input"],
+Cell[10645, 291, 128, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10647, 291, 2824, 73, 126, "Input"],
-Cell[13474, 366, 1747, 35, 324, "Output"],
-Cell[15224, 403, 267, 6, 21, "Message"],
-Cell[15494, 411, 269, 6, 21, "Message"],
-Cell[15766, 419, 267, 6, 21, "Message"],
-Cell[16036, 427, 348, 7, 21, "Message"]
+Cell[10810, 298, 2824, 73, 126, "Input"],
+Cell[13637, 373, 1747, 35, 330, "Output"],
+Cell[15387, 410, 267, 6, 21, "Message"],
+Cell[15657, 418, 269, 6, 21, "Message"],
+Cell[15929, 426, 267, 6, 21, "Message"],
+Cell[16199, 434, 348, 7, 21, "Message"]
 }, Open  ]]
 }
 ]
