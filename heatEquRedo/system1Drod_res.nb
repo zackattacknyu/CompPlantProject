@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     52980,       1166]
-NotebookOptionsPosition[     51804,       1121]
-NotebookOutlinePosition[     52145,       1136]
-CellTagsIndexPosition[     52102,       1133]
+NotebookDataLength[     53191,       1169]
+NotebookOptionsPosition[     52015,       1124]
+NotebookOutlinePosition[     52356,       1139]
+CellTagsIndexPosition[     52313,       1136]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -113,7 +113,7 @@ g92Zp7g8gfPrPVrnb3mG4Cve9bqxuPUpnG9l3jJF0ugZnB8jd/4n42UE/+up
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{3.6887753662914534`*^9, 3.688775952988011*^9, 
-  3.6887761752307224`*^9}]
+  3.6887761752307224`*^9, 3.688795749806324*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -325,7 +325,7 @@ D8FvaF3YeGfVOzh/7QvZ2Xw+7+F8pRYRD/ZlCP50ee6v//8j+ADt4RJX
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.688775487574391*^9, 3.6887755006211367`*^9}, {
    3.6887756560930295`*^9, 3.6887756835636005`*^9}, 3.6887759531300187`*^9, 
-   3.6887761753447285`*^9}]
+   3.6887761753447285`*^9, 3.68879574991133*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -401,19 +401,21 @@ Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,8,1,28768129533390061804,"Kernal1"},
+Adding artificial diffusion may help.\"",2,26,48,28768256803829676367,
+   "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.688775736689639*^9, 3.6887759531850224`*^9, 
-  3.6887761753947315`*^9}],
+  3.6887761753947315`*^9, 3.688795749932331*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "NDSolveValue","femcscd",
    "\"The PDE is convection dominated and the result may not be stable. \
-Adding artificial diffusion may help.\"",2,9,2,28768129533390061804,"Kernal1"},
+Adding artificial diffusion may help.\"",2,27,49,28768256803829676367,
+   "Kernal1"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.688775736689639*^9, 3.6887759531850224`*^9, 
-  3.6887761755147386`*^9}]
+  3.6887761753947315`*^9, 3.6887957500223365`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -445,17 +447,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.24, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0.5, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {513., {108., 113.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$9705$$ = 0}, 
+    True, $CellContext`t$109181$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$9705$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$109181$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -479,7 +481,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.688775785295419*^9, 3.6887759535920453`*^9, 
-  3.688776175744752*^9, 3.6887763129556*^9}]
+  3.688776175744752*^9, 3.6887763129556*^9, 3.6887957500903406`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -836,7 +838,7 @@ x+g6gaiy9wqwzFuexEu5Q0Lvd4cCmD8PJ/lZOKY0vbioAK8YbbzY/wPi1LNi
      Scaled[0.05], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.688776648202775*^9}]
+ CellChangeTimes->{3.688776648202775*^9, 3.688795778341956*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -895,17 +897,17 @@ Cell[BoxData[{
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.68, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0.4, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {753., {169., 176.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {544., {106., 113.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$56592$$ = 0}, 
+    True, $CellContext`t$144503$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$56592$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$144503$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -918,7 +920,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
          "Temp Flow with No Rod", "Temp Flow with Rod", "Max", "Min"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{804., {219., 226.}},
+     ImageSizeCache->{595., {156., 163.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -929,7 +931,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.68877687453172*^9}]
+ CellChangeTimes->{3.68877687453172*^9, 3.6887957783979597`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -990,17 +992,17 @@ Cell[BoxData[{
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.9000000000000001`, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 0.18, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {544., {106., 113.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {544., {104., 111.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$69584$$ = 0}, 
+    True, $CellContext`t$144612$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$69584$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$144612$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1013,7 +1015,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
          "Temp Flow with No Rod", "Temp Flow with Rod", "Max", "Min"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{595., {156., 163.}},
+     ImageSizeCache->{595., {154., 161.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1024,7 +1026,8 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.688777035934952*^9, 3.6887772096988907`*^9}]
+ CellChangeTimes->{3.688777035934952*^9, 3.6887772096988907`*^9, 
+  3.688795779367015*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1082,17 +1085,17 @@ Cell[BoxData[{
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.02, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0.56, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {544., {103., 110.}}, 
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {544., {105., 112.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$64811$$ = 0}, 
+    True, $CellContext`t$144864$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$64811$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$144864$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1105,7 +1108,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
          "Temp Flow with No Rod", "Temp Flow with Rod", "Max", "Min"}], 
       "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{595., {153., 160.}},
+     ImageSizeCache->{595., {155., 162.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1116,7 +1119,7 @@ $CellContext`maxTempVal, 0}, {$CellContext`x, 0, 1},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6887770956673684`*^9}]
+ CellChangeTimes->{3.6887770956673684`*^9, 3.688795779399017*^9}]
 }, Open  ]]
 },
 WindowSize->{816, 980},
@@ -1137,36 +1140,36 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 1232, 32, 107, "Input"],
-Cell[1815, 56, 2637, 59, 236, "Output"]
+Cell[1815, 56, 2659, 59, 236, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4489, 120, 810, 23, 88, "Input"],
-Cell[5302, 145, 10235, 182, 236, "Output"]
+Cell[4511, 120, 810, 23, 88, "Input"],
+Cell[5324, 145, 10256, 182, 236, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15574, 332, 2337, 65, 126, "Input"],
-Cell[17914, 399, 344, 7, 21, "Message"],
-Cell[18261, 408, 344, 7, 21, "Message"]
+Cell[15617, 332, 2337, 65, 126, "Input"],
+Cell[17957, 399, 372, 8, 21, "Message"],
+Cell[18332, 409, 374, 8, 21, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18642, 420, 826, 22, 50, "Input"],
-Cell[19471, 444, 1878, 37, 338, "Output"]
+Cell[18743, 422, 826, 22, 50, "Input"],
+Cell[19572, 446, 1905, 37, 338, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21386, 486, 939, 27, 69, "Input"],
-Cell[22328, 515, 18720, 323, 219, "Output"]
+Cell[21514, 488, 939, 27, 69, "Input"],
+Cell[22456, 517, 18742, 323, 219, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41085, 843, 1676, 49, 107, "Input"],
-Cell[42764, 894, 1840, 37, 462, "Output"]
+Cell[41235, 845, 1676, 49, 107, "Input"],
+Cell[42914, 896, 1865, 37, 336, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44641, 936, 1748, 51, 107, "Input"],
-Cell[46392, 989, 1880, 37, 336, "Output"]
+Cell[44816, 938, 1748, 51, 107, "Input"],
+Cell[46567, 991, 1892, 38, 332, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48309, 1031, 1631, 48, 107, "Input"],
-Cell[49943, 1081, 1845, 37, 330, "Output"]
+Cell[48496, 1034, 1631, 48, 107, "Input"],
+Cell[50130, 1084, 1869, 37, 367, "Output"]
 }, Open  ]]
 }
 ]
