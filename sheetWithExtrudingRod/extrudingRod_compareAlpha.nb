@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23208,        627]
-NotebookOptionsPosition[     22361,        594]
-NotebookOutlinePosition[     22703,        609]
-CellTagsIndexPosition[     22660,        606]
+NotebookDataLength[     23201,        624]
+NotebookOptionsPosition[     22354,        591]
+NotebookOutlinePosition[     22696,        606]
+CellTagsIndexPosition[     22653,        603]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -49,10 +49,7 @@ Cell[BoxData["0.05`"], "Output",
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"epsilonVals", " ", "=", " ", 
-   RowBox[{"{", 
-    RowBox[{"0.05", ",", "0.01", ",", "0.002"}], "}"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+  RowBox[{"epsilon", " ", "=", " ", "0.01"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"sheet", " ", "=", " ", 
    RowBox[{"MeshRegion", "[", 
@@ -130,7 +127,7 @@ Cell[BoxData[{
   3.6892128933327427`*^9, 3.689212914836797*^9}, {3.689214037627792*^9, 
   3.689214131456703*^9}, {3.689214427057362*^9, 3.689214531568491*^9}, {
   3.6892145892007666`*^9, 3.6892146129752913`*^9}, {3.6892146432729473`*^9, 
-  3.6892146446869736`*^9}}],
+  3.6892146446869736`*^9}, {3.6892179381631565`*^9, 3.6892179421501656`*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -539,8 +536,8 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.5, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 1.1400000000000001`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {759., {147., 154.}}, 
@@ -617,17 +614,17 @@ Cell[CellGroupData[{
 Cell[1044, 39, 155, 3, 30, "Input"],
 Cell[1202, 44, 130, 2, 30, "Output"]
 }, Open  ]],
-Cell[1347, 49, 2902, 83, 126, "Input"],
-Cell[4252, 134, 542, 16, 50, "Input"],
-Cell[4797, 152, 1287, 30, 69, "Input"],
-Cell[6087, 184, 6710, 196, 354, "Input"],
+Cell[1347, 49, 2879, 80, 126, "Input"],
+Cell[4229, 131, 542, 16, 50, "Input"],
+Cell[4774, 149, 1287, 30, 69, "Input"],
+Cell[6064, 181, 6710, 196, 354, "Input"],
 Cell[CellGroupData[{
-Cell[12822, 384, 2070, 43, 297, "Input"],
-Cell[14895, 429, 2712, 55, 258, "Output"]
+Cell[12799, 381, 2070, 43, 297, "Input"],
+Cell[14872, 426, 2712, 55, 258, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17644, 489, 2039, 47, 278, "Input"],
-Cell[19686, 538, 2659, 53, 418, "Output"]
+Cell[17621, 486, 2039, 47, 278, "Input"],
+Cell[19663, 535, 2675, 53, 418, "Output"]
 }, Open  ]]
 }
 ]
