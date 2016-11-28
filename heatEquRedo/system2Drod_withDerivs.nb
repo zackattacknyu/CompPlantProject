@@ -1,0 +1,393 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13929,        385]
+NotebookOptionsPosition[     13185,        356]
+NotebookOutlinePosition[     13528,        371]
+CellTagsIndexPosition[     13485,        368]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"alphaRod", " ", "=", " ", "0.4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"alphaSheet", " ", "=", " ", "0.02"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"epsilon", " ", "=", " ", "0.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"diffConst", "[", "x_", "]"}], ":=", 
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"alphaSheet", ",", " ", 
+        RowBox[{"x", " ", "<", " ", 
+         RowBox[{"0.5", "-", "epsilon"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"alphaRod", ",", 
+        RowBox[{
+         RowBox[{"x", " ", "\[GreaterEqual]", " ", 
+          RowBox[{"0.5", "-", "epsilon"}]}], " ", "&&", " ", 
+         RowBox[{"x", " ", "<", " ", 
+          RowBox[{"0.5", " ", "+", " ", "epsilon"}]}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"alphaSheet", ",", 
+        RowBox[{"x", "\[GreaterEqual]", 
+         RowBox[{"0.5", "+", "epsilon"}]}]}], "}"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"initF", "[", 
+     RowBox[{"x_", ",", "y_"}], "]"}], ":=", " ", 
+    RowBox[{"20", "*", 
+     RowBox[{"x", "^", "2"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "1"}], ")"}], "^", "2"}], "*", 
+     RowBox[{"y", "^", "2"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"y", "-", "1"}], ")"}], "^", "2"}]}]}], ";"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"systemWithRod", " ", "=", " ", 
+   RowBox[{"NDSolveValue", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"D", "[", 
+          RowBox[{
+           RowBox[{"u", "[", 
+            RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "t"}], "]"}], "-", 
+         
+         RowBox[{
+          RowBox[{"diffConst", "[", "x", "]"}], "*", 
+          RowBox[{"Laplacian", "[", 
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "\[Equal]", "0"}], 
+       ",", 
+       RowBox[{"DirichletCondition", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"u", "[", 
+           RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
+          RowBox[{"initF", "[", 
+           RowBox[{"x", ",", "y"}], "]"}]}], ",", 
+         RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"systemNoRod", " ", "=", " ", 
+   RowBox[{"NDSolveValue", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"D", "[", 
+          RowBox[{
+           RowBox[{"u", "[", 
+            RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "t"}], "]"}], "-", 
+         
+         RowBox[{"alphaSheet", "*", 
+          RowBox[{"Laplacian", "[", 
+           RowBox[{
+            RowBox[{"u", "[", 
+             RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "\[Equal]", "0"}], 
+       ",", 
+       RowBox[{"DirichletCondition", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"u", "[", 
+           RowBox[{"x", ",", "y", ",", "t"}], "]"}], "\[Equal]", 
+          RowBox[{"initF", "[", 
+           RowBox[{"x", ",", "y"}], "]"}]}], ",", 
+         RowBox[{"t", "\[Equal]", "0"}]}], "]"}]}], "}"}], ",", "u", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6888496459020815`*^9, 3.6888496688831434`*^9}, {
+   3.68885133275216*^9, 3.6888514063805695`*^9}, 3.688851764728083*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","femcscd",
+   "\"The PDE is convection dominated and the result may not be stable. \
+Adding artificial diffusion may help.\"",2,6,1,28771490852807258520,"Kernal1"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6888497077431326`*^9, 3.6888506077578506`*^9, 
+  3.688851478624632*^9, 3.6888517457541246`*^9, 3.6888517785054054`*^9, 
+  3.68885199089001*^9, 3.6888539349393234`*^9, 3.6888819206710157`*^9, 
+  3.6888870957411723`*^9, 3.689275871512741*^9, 3.6892766570830755`*^9, 
+  3.689289115012721*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolveValue","femcscd",
+   "\"The PDE is convection dominated and the result may not be stable. \
+Adding artificial diffusion may help.\"",2,7,2,28771490852807258520,"Kernal1"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6888497077431326`*^9, 3.6888506077578506`*^9, 
+  3.688851478624632*^9, 3.6888517457541246`*^9, 3.6888517785054054`*^9, 
+  3.68885199089001*^9, 3.6888539349393234`*^9, 3.6888819206710157`*^9, 
+  3.6888870957411723`*^9, 3.689275871512741*^9, 3.6892766570830755`*^9, 
+  3.689289128476747*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"systemNoRod", "[", 
+        RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", 
+       RowBox[{"systemWithRod", "[", 
+        RowBox[{"x", ",", "y", ",", "t"}], "]"}], ",", "0", ",", "0.08"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<System without Rod\>\"", ",", "\"\<System with Rod\>\"", ",", 
+        "\"\<Zero\>\"", ",", "\"\<Const\>\""}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.688849715319473*^9, 3.6888497503828*^9}, {
+  3.6888514229329185`*^9, 3.6888514416260357`*^9}, {3.6888518550521526`*^9, 
+  3.6888518584893656`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {515., {137., 144.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$5838$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$5838$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot3D[{
+         $CellContext`systemNoRod[$CellContext`x, $CellContext`y, \
+$CellContext`t$$], 
+         $CellContext`systemWithRod[$CellContext`x, $CellContext`y, \
+$CellContext`t$$], 0, 0.08}, {$CellContext`x, 0, 1}, {$CellContext`y, 0, 1}, 
+        PlotLegends -> {
+         "System without Rod", "System with Rod", "Zero", "Const"}], 
+      "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{566., {187., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.688849759018007*^9, 3.6888506103800983`*^9, 
+  3.6888518658251925`*^9, 3.688852061178089*^9, 3.688881946080469*^9, 
+  3.6888871230100203`*^9, 3.6892758965179048`*^9, 3.6892766828041906`*^9, 
+  3.689289146916587*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+     "This", " ", "shows", " ", "the", " ", "temperature", " ", "flow", " ", 
+      "of", " ", "the", " ", "system", " ", "as", " ", "a", " ", "function", 
+      " ", "of", " ", "x", " ", "at", " ", "each", " ", "time", " ", 
+      RowBox[{"point", ".", " ", "\[IndentingNewLine]", "At"}], " ", "x"}], 
+     "=", 
+     RowBox[{
+      RowBox[{"0.4", " ", "at", " ", "x"}], "=", "0.6"}]}], ",", " ", 
+    RowBox[{
+    "which", " ", "is", " ", "the", " ", "boundary", " ", "between", " ", 
+     "the", " ", "different", " ", "diffusion", " ", "coefficients"}], ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{
+    "there", " ", "is", " ", "no", " ", "jump", " ", "in", " ", "temperature",
+      " ", "flow"}], ",", " ", 
+    RowBox[{
+    "thus", " ", "the", " ", "neumann", " ", "conditions", " ", "match"}]}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"tempFlowRodSysX", "[", 
+      RowBox[{"x_", ",", "y_", ",", "t_"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"systemWithRod", "[", 
+         RowBox[{"xx", ",", "yy", ",", "tt"}], "]"}], ",", "xx"}], "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"xx", "\[Rule]", "x"}], ",", 
+        RowBox[{"yy", "\[Rule]", "y"}], ",", 
+        RowBox[{"tt", "\[Rule]", "t"}]}], "}"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"tempFlowRodSysY", "[", 
+      RowBox[{"x_", ",", "y_", ",", "t_"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"systemWithRod", "[", 
+         RowBox[{"xx", ",", "yy", ",", "tt"}], "]"}], ",", "yy"}], "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"xx", "\[Rule]", "x"}], ",", 
+        RowBox[{"yy", "\[Rule]", "y"}], ",", 
+        RowBox[{"tt", "\[Rule]", "t"}]}], "}"}]}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.6888504213991013`*^9, 3.6888505033463173`*^9}, {
+  3.6888505456172795`*^9, 3.6888505475267076`*^9}, {3.688851578982448*^9, 
+  3.6888516113386393`*^9}, {3.6888516958248844`*^9, 3.6888517422796607`*^9}, {
+  3.689276640476013*^9, 3.6892766407470164`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"tt", "=", "2"}], ";", 
+  RowBox[{"StreamPlot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"tempFlowRodSysX", "[", 
+       RowBox[{"x", ",", "y", ",", "tt"}], "]"}], ",", 
+      RowBox[{"tempFlowRodSysY", "[", 
+       RowBox[{"x", ",", "y", ",", "tt"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.688882775254895*^9, 3.688882789190692*^9}, 
+   3.689276653505059*^9, {3.68927679163375*^9, 3.689276793856761*^9}, {
+   3.689289084794446*^9, 3.6892890970070777`*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.689289381314399*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "xx", "]"}]], "Input",
+ CellChangeTimes->{{3.689289478224599*^9, 3.689289479803206*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "tt", "]"}]], "Input",
+ CellChangeTimes->{{3.6892894848044267`*^9, 3.689289486074232*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"xV", "=", "0"}], ";", 
+  RowBox[{"xv2", "=", "1"}], ";", " ", 
+  RowBox[{"yV", "=", "0"}], ";", 
+  RowBox[{"yV2", " ", "=", " ", "1"}], ";", 
+  RowBox[{"tV", "=", "2"}], ";", " ", 
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"tempFlowRodSysX", "[", 
+       RowBox[{"xV", ",", "v", ",", "tV"}], "]"}], ",", 
+      RowBox[{"tempFlowRodSysX", "[", 
+       RowBox[{"xv2", ",", "v", ",", "tV"}], "]"}], ",", 
+      RowBox[{"tempFlowRodSysY", "[", 
+       RowBox[{"v", ",", "yV", ",", "tV"}], "]"}], ",", 
+      RowBox[{"tempFlowRodSysY", "[", 
+       RowBox[{"v", ",", "yV2", ",", "tV"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"v", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6892894012548*^9, 3.689289418238316*^9}, {
+   3.689289450758071*^9, 3.689289453504486*^9}, {3.6892894928175*^9, 
+   3.6892895036359444`*^9}, {3.6892895815441003`*^9, 3.6892896693170786`*^9}, 
+   3.6893132876489544`*^9}]
+},
+WindowSize->{1173, 980},
+WindowMargins->{{Automatic, 94}, {Automatic, 31}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4100, 117, 183, "Input"],
+Cell[4683, 141, 562, 10, 21, "Message"],
+Cell[5248, 153, 562, 10, 21, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5847, 168, 974, 25, 50, "Input"],
+Cell[6824, 195, 2059, 41, 398, "Output"]
+}, Open  ]],
+Cell[8898, 239, 2223, 56, 107, "Input"],
+Cell[CellGroupData[{
+Cell[11146, 299, 676, 17, 30, "Input"],
+Cell[11825, 318, 77, 1, 30, "Output"]
+}, Open  ]],
+Cell[11917, 322, 125, 2, 30, "Input"],
+Cell[12045, 326, 127, 2, 30, "Input"],
+Cell[12175, 330, 1006, 24, 107, "Input"]
+}
+]
+*)
+
