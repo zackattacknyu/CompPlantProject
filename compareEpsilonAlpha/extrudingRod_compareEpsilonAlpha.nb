@@ -1,0 +1,441 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15293,        433]
+NotebookOptionsPosition[     14562,        404]
+NotebookOutlinePosition[     14904,        419]
+CellTagsIndexPosition[     14861,        416]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"epsilonVals", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"0.05", ",", "0.01", ",", "0.002"}], "}"}]}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LL", " ", "=", " ", 
+  RowBox[{"Length", "[", "epsilonVals", "]"}]}]], "Input",
+ CellChangeTimes->{{3.6892146012000017`*^9, 3.6892146082831783`*^9}}],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{3.689214608535182*^9, 3.689216816830912*^9, 
+  3.6906674031282406`*^9, 3.690747713021017*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"epsilonVals", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.689214489731657*^9, 3.6892144989288473`*^9}}],
+
+Cell[BoxData["0.05`"], "Output",
+ CellChangeTimes->{{3.6892144935747337`*^9, 3.6892144992318525`*^9}, 
+   3.6892168168349123`*^9, 3.690667403143841*^9, 3.6907477130410166`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"epsilonVals", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"0.05", ",", "0.01", ",", "0.002"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sheet", " ", "=", " ", 
+   RowBox[{"MeshRegion", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}], ",", 
+       RowBox[{"Triangle", "[", 
+        RowBox[{"{", 
+         RowBox[{"2", ",", "3", ",", "4"}], "}"}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rods", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"MeshRegion", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"0.5", "-", 
+            RowBox[{"epsilonVals", "[", 
+             RowBox[{"[", "ii", "]"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"0.5", "+", 
+            RowBox[{"epsilonVals", "[", 
+             RowBox[{"[", "ii", "]"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", 
+           RowBox[{"0.5", "-", 
+            RowBox[{"epsilonVals", "[", 
+             RowBox[{"[", "ii", "]"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", 
+           RowBox[{"0.5", "+", 
+            RowBox[{"epsilonVals", "[", 
+             RowBox[{"[", "ii", "]"}], "]"}]}]}], "}"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Triangle", "[", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}], ",", 
+         RowBox[{"Triangle", "[", 
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3", ",", "4"}], "}"}], "]"}]}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"ii", ",", "1", ",", "LL"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"regions", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"RegionUnion", "[", 
+      RowBox[{"sheet", ",", 
+       RowBox[{"rods", "[", 
+        RowBox[{"[", "jj", "]"}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"jj", ",", "1", ",", "LL"}], "}"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.689190426784278*^9, 3.6891905098586273`*^9}, {
+  3.6892128933327427`*^9, 3.689212914836797*^9}, {3.689214037627792*^9, 
+  3.689214131456703*^9}, {3.689214427057362*^9, 3.689214531568491*^9}, {
+  3.6892145892007666`*^9, 3.6892146129752913`*^9}, {3.6892146432729473`*^9, 
+  3.6892146446869736`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"kk", " ", "=", " ", "50"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"initFunc", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"kk", "*", 
+    RowBox[{"x", "^", "2"}], "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"x", "-", "2"}], ")"}], "^", "2"}], "*", 
+    RowBox[{"y", "^", "2"}], "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"y", "-", "1"}], ")"}], "^", "2"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.689191146595569*^9, 3.6891911644121265`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Whole", " ", "region"}], ",", " ", 
+    RowBox[{"alphaSheet", " ", "for", " ", "all", " ", "diffusion"}]}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"alphaSheet", "  ", "=", " ", "0.02"}], ";", " ", 
+    RowBox[{"alpha1", " ", "=", "20"}], ";", " ", 
+    RowBox[{"alpha2", " ", "=", " ", "100"}], ";", " ", 
+    RowBox[{"alpha3", " ", "=", " ", "500"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"diffFunc1", "[", "x_", "]"}], ":=", 
+     RowBox[{"Piecewise", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"alphaSheet", ",", 
+          RowBox[{"x", "<", "1"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"alpha1", ",", 
+          RowBox[{"x", ">", "1"}]}], "}"}]}], "}"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"diffFunc2", "[", "x_", "]"}], ":=", 
+     RowBox[{"Piecewise", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"alphaSheet", ",", 
+          RowBox[{"x", "<", "1"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"alpha2", ",", 
+          RowBox[{"x", ">", "1"}]}], "}"}]}], "}"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"diffFunc3", "[", "x_", "]"}], ":=", 
+     RowBox[{"Piecewise", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"alphaSheet", ",", 
+          RowBox[{"x", "<", "1"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"alpha3", ",", 
+          RowBox[{"x", ">", "1"}]}], "}"}]}], "}"}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.6891910047891827`*^9, 3.689191129441036*^9}, {
+   3.6891911717153625`*^9, 3.6891912629642887`*^9}, {3.6891913273333263`*^9, 
+   3.6891913316494656`*^9}, {3.6891915183879323`*^9, 3.689191563217373*^9}, {
+   3.6891921401922417`*^9, 3.6891921530777855`*^9}, {3.689204163210398*^9, 
+   3.6892041648504086`*^9}, {3.689212977939953*^9, 3.6892131075783663`*^9}, {
+   3.6892147031056395`*^9, 3.6892147547836647`*^9}, 3.689214803580657*^9, {
+   3.689216879216943*^9, 3.689216879641949*^9}, 3.689216995517067*^9, {
+   3.690748086384428*^9, 3.690748112191904*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"valsNonUniformDiffusion1", " ", "=", " ", 
+   RowBox[{"NDSolveValue", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"u", "[", 
+           RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", "t"}], "]"}], 
+        "\[Equal]", 
+        RowBox[{
+         RowBox[{"diffFunc1", "[", "x", "]"}], "*", 
+         RowBox[{"Laplacian", "[", 
+          RowBox[{
+           RowBox[{"u", "[", 
+            RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"u", "[", 
+         RowBox[{"0", ",", "x", ",", "y"}], "]"}], "\[Equal]", 
+        RowBox[{"initFunc", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}], ",", "u", ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], "\[Element]", 
+      RowBox[{"regions", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"valsNonUniformDiffusion2", " ", "=", " ", 
+   RowBox[{"NDSolveValue", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"u", "[", 
+           RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", "t"}], "]"}], 
+        "\[Equal]", 
+        RowBox[{
+         RowBox[{"diffFunc2", "[", "x", "]"}], "*", 
+         RowBox[{"Laplacian", "[", 
+          RowBox[{
+           RowBox[{"u", "[", 
+            RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"u", "[", 
+         RowBox[{"0", ",", "x", ",", "y"}], "]"}], "\[Equal]", 
+        RowBox[{"initFunc", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}], ",", "u", ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], "\[Element]", 
+      RowBox[{"regions", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"valsNonUniformDiffusion3", " ", "=", " ", 
+   RowBox[{"NDSolveValue", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"u", "[", 
+           RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", "t"}], "]"}], 
+        "\[Equal]", 
+        RowBox[{
+         RowBox[{"diffFunc3", "[", "x", "]"}], "*", 
+         RowBox[{"Laplacian", "[", 
+          RowBox[{
+           RowBox[{"u", "[", 
+            RowBox[{"t", ",", "x", ",", "y"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"u", "[", 
+         RowBox[{"0", ",", "x", ",", "y"}], "]"}], "\[Equal]", 
+        RowBox[{"initFunc", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}], ",", "u", ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], "\[Element]", 
+      RowBox[{"regions", "[", 
+       RowBox[{"[", "3", "]"}], "]"}]}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6892167203344636`*^9, 3.689216747868902*^9}, {
+  3.689216840971283*^9, 3.689216870396742*^9}, {3.6907480561787*^9, 
+  3.6907480819691753`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"yy", "=", "0.5"}], ";", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"valsNonUniformDiffusion1", "[", 
+         RowBox[{"t", ",", "x", ",", "yy"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"valsNonUniformDiffusion2", "[", 
+         RowBox[{"t", ",", "x", ",", "yy"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"valsNonUniformDiffusion3", "[", 
+         RowBox[{"t", ",", "x", ",", "yy"}], "]"}], ",", 
+        "\[IndentingNewLine]", "0", ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+      RowBox[{"PlotLegends", "\[Rule]", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Higher Diffusion in Rod, epsilon=0.05, alpha=20\>\"", ",", 
+         "\[IndentingNewLine]", 
+         "\"\<Higher Diffusion in Rod, epsilon=0.01, alpha=100\>\"", ",", 
+         "\[IndentingNewLine]", 
+         "\"\<Higher Diffusion in Rod, epsilon=0.002, alpha=500\>\""}], 
+        "}"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.68921314239546*^9, 3.68921314541247*^9}, {
+  3.6892152777155437`*^9, 3.689215379268485*^9}, {3.6892169222577505`*^9, 
+  3.6892169504412413`*^9}, {3.690748018850565*^9, 3.6907480432489605`*^9}, {
+  3.690748148944006*^9, 3.690748149504038*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0.28, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {695., {108., 113.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$19838$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$19838$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`valsNonUniformDiffusion1[$CellContext`t$$, \
+$CellContext`x, $CellContext`yy], 
+         $CellContext`valsNonUniformDiffusion2[$CellContext`t$$, \
+$CellContext`x, $CellContext`yy], 
+         $CellContext`valsNonUniformDiffusion3[$CellContext`t$$, \
+$CellContext`x, $CellContext`yy], 0, 3}, {$CellContext`x, 0, 2}, 
+        PlotLegends -> {
+         "Higher Diffusion in Rod, epsilon=0.05, alpha=20", 
+          "Higher Diffusion in Rod, epsilon=0.01, alpha=100", 
+          "Higher Diffusion in Rod, epsilon=0.002, alpha=500"}], 
+      "Specifications" :> {{$CellContext`t$$, 0, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{746., {157., 164.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6892131607665677`*^9, {3.6892153349836273`*^9, 3.689215380112499*^9}, 
+   3.689215689434267*^9, {3.6892168140758715`*^9, 3.6892168185949354`*^9}, {
+   3.689216935872986*^9, 3.689216951048252*^9}, 3.6906674047058434`*^9, 
+   3.6907477154610424`*^9, 3.6907481517911687`*^9}]
+}, Open  ]]
+},
+WindowSize->{984, 821},
+WindowMargins->{{Automatic, 27}, {Automatic, 22}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 156, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[739, 28, 173, 3, 30, "Input"],
+Cell[915, 33, 141, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1093, 40, 155, 3, 30, "Input"],
+Cell[1251, 45, 176, 2, 30, "Output"]
+}, Open  ]],
+Cell[1442, 50, 2902, 83, 126, "Input"],
+Cell[4347, 135, 542, 16, 50, "Input"],
+Cell[4892, 153, 2262, 59, 107, "Input"],
+Cell[7157, 214, 3521, 101, 183, "Input"],
+Cell[CellGroupData[{
+Cell[10703, 319, 1497, 34, 164, "Input"],
+Cell[12203, 355, 2343, 46, 371, "Output"]
+}, Open  ]]
+}
+]
+*)
+
